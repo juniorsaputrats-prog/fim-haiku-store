@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="pluginGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#181923" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="bookCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7E22CE" />
+      <stop offset="100%" stop-color="#581C87" />
+    </linearGradient>
+    <linearGradient id="commandCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="240" rx="12" fill="#14151D" />
+  <circle cx="200" cy="120" r="100" fill="url(#pluginGlow)" />
+
+  <!-- Enchantment Table & Floating Spellbook -->
+  <g transform="translate(200, 130)">
+    <!-- Obsidian Table Base -->
+    <polygon points="0,48 85,15 0,-18 -85,15" fill="#1E1B4B" stroke="#4338CA" stroke-width="1.5" />
+    <polygon points="-85,15 0,48 0,65 -85,32" fill="#0F0C2E" />
+    <polygon points="0,48 85,15 85,32 0,65" fill="#181347" />
+
+    <!-- Red Table Cloth Top -->
+    <polygon points="0,42 75,13 0,-16 -75,13" fill="#991B1B" stroke="#DC2626" stroke-width="1.2" />
+
+    <!-- Floating Enchanted Book / API Module -->
+    <g transform="translate(0, -28)">
+      <!-- Left Page Wing -->
+      <path d="M0 0 C -20 -10, -40 -5, -45 -25 C -25 -22, -10 -15, 0 -6 Z" fill="#F8FAFC" stroke="#C084FC" stroke-width="1" />
+      <!-- Right Page Wing -->
+      <path d="M0 0 C 20 -10, 40 -5, 45 -25 C 25 -22, 10 -15, 0 -6 Z" fill="#F8FAFC" stroke="#C084FC" stroke-width="1" />
+      <!-- Book Binding Rib -->
+      <line x1="0" y1="2" x2="0" y2="-8" stroke="#7E22CE" stroke-width="3" />
+      <!-- Floating Runes / Minecraft Standard Galactic Letters -->
+      <rect x="-18" y="-18" width="4" height="4" fill="#8B5CF6" />
+      <rect x="-28" y="-12" width="6" height="3" fill="#A855F7" />
+      <rect x="18" y="-18" width="4" height="4" fill="#8B5CF6" />
+      <rect x="26" y="-12" width="6" height="3" fill="#A855F7" />
+    </g>
+
+    <!-- Floating Command Block Cubes on Sides -->
+    <g transform="translate(-70, -10)">
+      <polygon points="0,-12 12,-5 0,2 -12,-5" fill="url(#commandCore)" stroke="#F59E0B" stroke-width="1" />
+      <polygon points="-12,-5 0,2 0,14 -12,7" fill="#78350F" />
+      <polygon points="0,2 12,-5 12,7 0,14" fill="#92400E" />
+      <circle cx="0" cy="2" r="2" fill="#FEF08A" />
+    </g>
+
+    <g transform="translate(70, -10)">
+      <polygon points="0,-12 12,-5 0,2 -12,-5" fill="#8B5CF6" stroke="#C084FC" stroke-width="1" />
+      <polygon points="-12,-5 0,2 0,14 -12,7" fill="#6D28D9" />
+      <polygon points="0,2 12,-5 12,7 0,14" fill="#581C87" />
+      <circle cx="0" cy="2" r="2" fill="#E9D5FF" />
+    </g>
+
+    <!-- Floating Badge: Custom Development -->
+    <g transform="translate(0, 48)">
+      <rect x="-65" y="-12" width="130" height="24" rx="6" fill="#181923" stroke="#A855F7" stroke-width="1.2" />
+      <text x="0" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#DDD6FE" text-anchor="middle">
+        SPIGOT / PAPER API
+      </text>
+    </g>
+  </g>
+
+  <!-- Mystical Sparkles -->
+  <circle cx="75" cy="55" r="2" fill="#C084FC" />
+  <circle cx="325" cy="65" r="2.5" fill="#DDD6FE" />
+  <circle cx="200" cy="40" r="1.5" fill="#FDE047" />
+</svg>

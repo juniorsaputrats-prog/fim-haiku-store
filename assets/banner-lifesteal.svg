@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="lsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D060E" />
+      <stop offset="50%" stop-color="#190408" />
+      <stop offset="100%" stop-color="#090103" />
+    </linearGradient>
+    <radialGradient id="crimsonAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.65" />
+      <stop offset="60%" stop-color="#991B1B" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FECACA" />
+      <stop offset="35%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#7F1D1D" />
+    </linearGradient>
+    <linearGradient id="crimsonTitle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#FCA5A5" />
+      <stop offset="100%" stop-color="#DC2626" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#lsBg)" />
+  <circle cx="400" cy="210" r="260" fill="url(#crimsonAura)" />
+
+  <g opacity="0.15">
+    <path d="M0 60 H800 M0 120 H800 M0 180 H800 M0 240 H800 M0 300 H800 M0 360 H800 M0 420 H800" stroke="#EF4444" stroke-width="1" stroke-dasharray="4 8" />
+    <path d="M100 0 V450 M200 0 V450 M300 0 V450 M400 0 V450 M500 0 V450 M600 0 V450 M700 0 V450" stroke="#EF4444" stroke-width="1" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Big 3D Minecraft Crimson Heart -->
+  <g transform="translate(400, 180)">
+    <!-- Shadow -->
+    <path d="M-80,-40 C-80,-90 -20,-90 0,-30 C20,-90 80,-90 80,-40 C80,20 0,80 0,80 C0,80 -80,20 -80,-40 Z" fill="#000000" opacity="0.4" transform="translate(0, 30) scale(1.1)" />
+    <!-- Heart Main -->
+    <path d="M-90,-50 C-90,-100 -25,-100 0,-40 C25,-100 90,-100 90,-50 C90,25 0,95 0,95 C0,95 -90,25 -90,-50 Z" fill="url(#heartGrad)" stroke="#B91C1C" stroke-width="6" />
+    <!-- Pixel Cut Highlights -->
+    <rect x="-60" y="-70" width="24" height="24" rx="4" fill="#FFFFFF" opacity="0.75" />
+    <rect x="-30" y="-70" width="16" height="16" rx="3" fill="#FFFFFF" opacity="0.5" />
+  </g>
+
+  <!-- Floating Pixel Crystals -->
+  <g fill="#EF4444" opacity="0.8">
+    <rect x="220" y="140" width="14" height="14" transform="rotate(45 220 140)" />
+    <rect x="580" y="160" width="18" height="18" transform="rotate(45 580 160)" fill="#F87171" />
+    <rect x="260" y="270" width="12" height="12" transform="rotate(45 260 270)" />
+    <rect x="540" y="280" width="16" height="16" transform="rotate(45 540 280)" />
+  </g>
+
+  <!-- Title Badge -->
+  <g transform="translate(400, 360)">
+    <rect x="-180" y="-36" width="360" height="72" rx="14" fill="#130306" stroke="#EF4444" stroke-width="2.5" />
+    <text x="0" y="8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" fill="url(#crimsonTitle)" text-anchor="middle" letter-spacing="3">LIFESTEAL SMP</text>
+    <text x="0" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="11" fill="#F87171" text-anchor="middle" letter-spacing="2">HEART STEAL &amp; REVIVE SYSTEM</text>
+  </g>
+</svg>
+

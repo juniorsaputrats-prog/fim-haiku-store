@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIM HAIKU: Jasa Setup Server Minecraft &amp; Custom Plugin</title>
+  <meta name="description" content="Marketplace jasa setup server Minecraft profesional, pembuatan plugin custom, dan promosi server untuk Java dan Bedrock. Cepat, berkualitas, dan harga terjangkau.">
+  <meta name="theme-color" content="#101116">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-body">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="javascript:void(0)" onclick="switchMainTab('paket')" class="brand-logo" aria-label="FIM HAIKU Home">
+        <img src="assets/logo.png" alt="FIM HAIKU Logo" class="brand-logo-img" width="44" height="44">
+        <span class="brand-name-wrap">
+          <span class="brand-title">FIM HAIKU</span>
+          <span class="brand-subtitle">JASA SETUP SERVER</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Menu Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="javascript:void(0)" class="nav-link active" onclick="switchMainTab('paket')">Paket</a></li>
+          <li><a href="javascript:void(0)" class="nav-link" onclick="switchMainTab('setup')">Setup</a></li>
+          <li><a href="javascript:void(0)" class="nav-link" onclick="switchMainTab('promotion')">Promotion</a></li>
+          <li><a href="javascript:void(0)" class="nav-link" onclick="switchMainTab('kontak')">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Controls -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary btn-nav-cta" onclick="openOrderModal()">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Pesan Sekarang</span>
+        </button>
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-header">
+        <span class="mobile-drawer-tag">FIM HAIKU OFFICIAL MARKETPLACE</span>
+        <button type="button" class="mobile-close-icon" onclick="closeMobileMenu()" aria-label="Tutup Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="javascript:void(0)" class="mobile-link" onclick="closeMobileMenu(); switchMainTab('paket');"><i class="fa-solid fa-box-open"></i> Paket</a></li>
+        <li><a href="javascript:void(0)" class="mobile-link" onclick="closeMobileMenu(); switchMainTab('setup');"><i class="fa-solid fa-screwdriver-wrench"></i> Setup</a></li>
+        <li><a href="javascript:void(0)" class="mobile-link" onclick="closeMobileMenu(); switchMainTab('promotion');"><i class="fa-solid fa-film"></i> Promotion</a></li>
+        <li><a href="javascript:void(0)" class="mobile-link" onclick="closeMobileMenu(); switchMainTab('kontak');"><i class="fa-solid fa-headset"></i> Kontak</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <button type="button" class="btn btn-primary w-100" onclick="closeMobileMenu(); openOrderModal();">
+          <i class="fa-solid fa-cart-shopping"></i> Pesan Sekarang
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= VIEW 1: PAKET (HERO + FEATURED PACKAGES) ================= -->
+    <div class="store-view active" id="view-paket">
+      <!-- ================= HERO SECTION (CINEMATIC GAMING COMPOSITION) ================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-layout">
+        <!-- Hero Left Column: Editorial & CTA -->
+        <div class="hero-copy-col reveal-on-scroll">
+          <div class="hero-pill-badge">
+            <span class="pill-dot"></span>
+            <span class="pill-text">FIM HAIKU OFFICIAL MARKETPLACE</span>
+          </div>
+
+          <h1 class="hero-headline">
+            BUILD YOUR<br>
+            <span class="hero-highlight">DREAM MINECRAFT</span><br>
+            SERVER.
+          </h1>
+
+          <p class="hero-description">
+            Jasa profesional untuk membangun server Minecraft impianmu. Mulai dari setup server, konfigurasi plugin, hingga custom development.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#katalog" class="btn btn-secondary btn-hero">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explore Services</span>
+            </a>
+            <button type="button" class="btn btn-primary btn-hero" onclick="openOrderModal()">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Order Now</span>
+            </button>
+          </div>
+
+          <!-- Feature Trust Markers -->
+          <div class="hero-feature-tags">
+            <div class="tag-item">
+              <i class="fa-solid fa-circle-check text-purple"></i>
+              <span>Java &amp; Bedrock Crossplay</span>
+            </div>
+            <div class="tag-item">
+              <i class="fa-solid fa-circle-check text-purple"></i>
+              <span>Anti-Lag Optimization</span>
+            </div>
+            <div class="tag-item">
+              <i class="fa-solid fa-circle-check text-purple"></i>
+              <span>Custom Plugin Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Cinematic Minecraft Illustration -->
+        <div class="hero-visual-col reveal-on-scroll delay-1">
+          <div class="hero-scene-frame">
+            <img src="assets/hero-minecraft.svg" alt="Cinematic Minecraft Server Environment" class="hero-scene-img" width="600" height="480" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICE MARKETPLACE (KATALOG JASA DUA SLIDE) ================= -->
+    <section class="section katalog-section" id="katalog">
+      <div class="container">
+
+        <!-- ========================================================
+             SLIDE 1: PAKET PILIHAN (DONUT, ECONOMY, LIFESTEAL, HARDCORE, ALTAR)
+             ======================================================== -->
+        <div class="catalog-slide active" id="slide-paket">
+          <!-- Section Header -->
+          <div class="section-title-wrap text-center reveal-on-scroll">
+            <span class="section-badge">FEATURED PACKAGES</span>
+            <h2 class="section-heading">Paket Pilihan FIM HAIKU</h2>
+            <p class="section-lead">
+              Pilihan paket setup server Minecraft terlengkap dan paling teruji. Anti-lag, sistem rapi, dukungan Bedrock &amp; Java, serta bergaransi.
+            </p>
+          </div>
+
+          <!-- Category Quick Filter Navigation (Slide 1) -->
+          <div class="catalog-category-nav reveal-on-scroll">
+            <a href="#cat-donut" class="cat-pill active">
+              <i class="fa-solid fa-circle-dot"></i>
+              <span>Donut SMP</span>
+            </a>
+            <a href="#cat-economy" class="cat-pill">
+              <i class="fa-solid fa-coins"></i>
+              <span>SMP Economy</span>
+            </a>
+            <a href="#cat-lifesteal" class="cat-pill">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <span>LifeSteal</span>
+            </a>
+            <a href="#cat-hardcore" class="cat-pill">
+              <i class="fa-solid fa-skull"></i>
+              <span>Hardcore</span>
+            </a>
+            <a href="#cat-altar" class="cat-pill">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>Altar SMP</span>
+            </a>
+            <button type="button" class="cat-pill pill-featured" onclick="switchCatalogSlide('setup')">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Setup Lainnya &rarr;</span>
+            </button>
+          </div>
+
+          <!-- ================= CATEGORY 1: DONUT SMP CLONE ================= -->
+          <div class="catalog-category-block" id="cat-donut">
+            <div class="category-header-row reveal-on-scroll">
+              <div class="cat-title-wrap">
+                <div class="cat-icon-badge"><i class="fa-solid fa-circle-dot"></i></div>
+                <div>
+                  <h3 class="category-title">DONUT SMP CLONE</h3>
+                  <p class="category-desc">Paket replika server Donut SMP terpopuler dengan fitur shop, crate, dan ekonomi seimbang.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-grid-2col">
+              <!-- Product 1: Donut SMP Basic -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-donut-v1.jpg" alt="Donut SMP Basic" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">DONUT SMP CLONE</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">Donut SMP Basic</h4>
+                    <div class="product-price">Rp55.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Setup server Donut SMP esensial dengan fitur dasar lengkap dan stabil.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR UTAMA:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Bedrock &amp; Java Support (Crossplay).</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Scoreboard dan TAB Default.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Simple Team, TPA &amp; Set Home System.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Action Bar &amp; Chat Format Bersih.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Custom Rank 1 - 3 &amp; Permissions.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Crate &amp; Key System.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Player Shops &amp; World Protection.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Support Akun Crack &amp; Geyser.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('Donut SMP Basic', 55000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 2: Donut SMP Complete Clone (Best Seller) -->
+              <article class="store-product-card card-featured-sigma reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-donut-v2.jpg" alt="Donut SMP Complete Clone" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">DONUT SMP CLONE PLUS</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-crown"></i> BEST SELLER
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name text-purple-light">Donut SMP Complete Clone</h4>
+                    <div class="product-price text-purple-light">Rp65.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Replika Donut SMP paling lengkap dengan visual interaktif dan optimasi tinggi.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR LENGKAP:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Semua fitur Donut SMP Basic.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Scoreboard dan TAB Custom Bergaya Donut SMP.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Action Bar, Boss Bar &amp; Chat Format v2.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Custom Rank 1 - 7 dengan Prefix Khusus.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Crate &amp; Key System Bertingkat (Tiered).</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Custom Join &amp; Leave Message.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Velocity, BungeeCord, Paper &amp; Purpur Support.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Top Money &amp; Top Kill Scoreboard.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Advanced Anti-Cheat &amp; Hologram Interaktif.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>World Protection &amp; Support Versi 1.20+.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order btn-sigma-order w-100" onclick="selectPackageOrder('Donut SMP Complete Clone', 65000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-bolt"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY 2: SMP ECONOMY ================= -->
+          <div class="catalog-category-block" id="cat-economy">
+            <div class="category-header-row reveal-on-scroll">
+              <div class="cat-title-wrap">
+                <div class="cat-icon-badge icon-blue"><i class="fa-solid fa-coins"></i></div>
+                <div>
+                  <h3 class="category-title">SMP ECONOMY</h3>
+                  <p class="category-desc">Setup server Minecraft berbasis ekonomi stabil, pasar pemain, lelang, dan sistem perbankan.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-grid-2col">
+              <!-- Product 1: SMP Economy Basic -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-economy-v1.jpg" alt="SMP Economy Basic" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge badge-blue">SMP ECONOMY</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">SMP Economy Basic</h4>
+                    <div class="product-price text-blue">Rp30.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Paket ekonomi dasar untuk komunitas survival yang membutuhkan sistem jual beli.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR UTAMA:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Plugin Economy Dasar Lengkap.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Money &amp; Balance System (/pay &amp; /bal).</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Player Auction House GUI (/ah).</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Shop GUI Basic &amp; Warp System.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Spawn &amp; Set Home System.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Rank 1 - 4 &amp; Scoreboard Basic.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>TAB &amp; Kills/Death Counter.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Bedrock &amp; Java Support + Crack Support.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('SMP Economy Basic', 30000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 2: SMP Economy Complete -->
+              <article class="store-product-card card-featured-sigma reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-economy-v2.jpg" alt="SMP Economy Complete" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge badge-blue">SMP ECONOMY PLUS</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-fire"></i> POPULER
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name text-blue">SMP Economy Complete</h4>
+                    <div class="product-price text-blue">Rp40.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Sistem ekonomi lengkap dengan trading pemain, daily rewards, dan leaderboard.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR LENGKAP:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Semua fitur Economy Basic.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Advanced Economy System &amp; Trade GUI (/trade).</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Custom Shop &amp; Sell GUI Interaktif.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Daily Reward System &amp; Crate Key System.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Custom Rank 1 - 8 &amp; Prefix Khusus.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Custom TAB &amp; Dynamic Scoreboard.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Top Money Leaderboard Hologram.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Anti-Griefing Protection &amp; Voice Chat Support.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('SMP Economy Complete', 40000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 3: SMP Economy Complete++ -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-economy-v3.jpg" alt="SMP Economy Complete++" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge badge-blue">SMP ECONOMY PRO</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name text-blue">SMP Economy Complete++</h4>
+                    <div class="product-price text-blue">Rp47.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Tingkat tertinggi ekonomi server dengan proteksi anti-dupe dan reward playtime.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR PRO:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Semua fitur Economy Complete.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Advanced Shop GUI &amp; Custom Economy Configuration.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Custom Rank 1 - 10 dengan Perizinan Khusus.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Scoreboard &amp; TAB Ringan Tanpa Lag.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Key Crates, Milestone &amp; Custom Rewards.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Anti-Dupe &amp; Enhanced Security System.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Playtime Reward &amp; Custom Hologram Statistics.</span></li>
+                      <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Bedrock &amp; Java Support 100%.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('SMP Economy Complete++', 47000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY 3: LIFESTEAL ================= -->
+          <div class="catalog-category-block" id="cat-lifesteal">
+            <div class="category-header-row reveal-on-scroll">
+              <div class="cat-title-wrap">
+                <div class="cat-icon-badge" style="background: rgba(239, 68, 68, 0.15); color: #F87171; border-color: rgba(239, 68, 68, 0.3);"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div>
+                  <h3 class="category-title">LIFESTEAL SMP</h3>
+                  <p class="category-desc">Mode survival penuh tensi: curi nyawa pemain lain saat kill dan buat ritual revive beacon.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-grid-2col">
+              <!-- Product 1: LifeSteal Basic -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-lifesteal.svg" alt="LifeSteal Basic" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge" style="color: #FCA5A5; border-color: rgba(239, 68, 68, 0.4);">LIFESTEAL BASIC</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">LifeSteal Basic</h4>
+                    <div class="product-price" style="color: #F87171;">Rp20.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Setup standar LifeSteal SMP dengan mekanisme curi hati dan resep crafting.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR UTAMA:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Plugin LifeSteal Lengkap.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Heart Steal System on Kill.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Custom Heart Recipe &amp; Revive Recipe.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>TPA System &amp; Set Home.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Spawn &amp; Random Teleport (/rtp).</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Custom Rank 1 - 3 &amp; Permissions.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Bedrock &amp; Java Support + Crack Support.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Voice Chat Support (Versi 1.20+).</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" style="background: linear-gradient(135deg, #EF4444 0%, #B91C1C 100%);" onclick="selectPackageOrder('LifeSteal Basic', 20000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 2: LifeSteal++ (Best Seller) -->
+              <article class="store-product-card card-featured-sigma reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-lifesteal.svg" alt="LifeSteal++" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge" style="color: #FCA5A5; border-color: rgba(239, 68, 68, 0.4);">LIFESTEAL PLUS</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-crown"></i> BEST SELLER
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name" style="color: #FECACA;">LifeSteal++</h4>
+                    <div class="product-price" style="color: #F87171;">Rp33.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Paket LifeSteal premium dengan leaderboard hati, daily upgrades, dan kustom TAB.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR LENGKAP:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Semua fitur LifeSteal Basic.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Advanced Heart System &amp; Max Heart Limit.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Custom Revive &amp; Beacon Heart Ritual.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Daily Upgrades System &amp; Rank 1 - 7.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Custom TAB &amp; Combat Scoreboard.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Top Kills &amp; Heart Leaderboard Hologram.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Custom Join &amp; Leave Death Messages.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #EF4444;"></i> <span>Bedrock, Java &amp; Voice Chat Support.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order btn-sigma-order w-100" style="background: linear-gradient(135deg, #F87171 0%, #DC2626 100%);" onclick="selectPackageOrder('LifeSteal++', 33000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-bolt"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY 4: HARDCORE ================= -->
+          <div class="catalog-category-block" id="cat-hardcore">
+            <div class="category-header-row reveal-on-scroll">
+              <div class="cat-title-wrap">
+                <div class="cat-icon-badge" style="background: rgba(249, 115, 22, 0.15); color: #FB923C; border-color: rgba(249, 115, 22, 0.3);"><i class="fa-solid fa-skull"></i></div>
+                <div>
+                  <h3 class="category-title">HARDCORE SMP</h3>
+                  <p class="category-desc">Mode hardcore kompetitif dengan sistem death ban, pelacak kematian, dan optimasi performa tinggi.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-grid-2col">
+              <!-- Product 1: HC Basic Setup -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-hc-basic.jpg" alt="HC Basic Setup" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge" style="color: #FDBA74; border-color: rgba(249, 115, 22, 0.4);">HARDCORE BASIC</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">HC Basic Setup</h4>
+                    <div class="product-price" style="color: #FB923C;">Rp18.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Setup hardcore esensial: kematian langsung diubah ke mode penonton atau ban sementara.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR UTAMA:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Plugin Hardcore Survival.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Spectator on Death / Ban on Death.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Death Counter System &amp; Custom TAB.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Basic Rank 1 - 3 &amp; LuckPerms Permissions.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Death Scoreboard Tracking.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Basic Server Performance Optimization.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" style="background: linear-gradient(135deg, #EA580C 0%, #9A3412 100%);" onclick="selectPackageOrder('HC Basic Setup', 18000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 2: HC Complete -->
+              <article class="store-product-card reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-hc-complete.jpg" alt="HC Complete" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge" style="color: #FDBA74; border-color: rgba(249, 115, 22, 0.4);">HARDCORE PLUS</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">HC Complete</h4>
+                    <div class="product-price" style="color: #FB923C;">Rp25.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Hardcore lengkap dengan konfigurasi rank, perizinan lanjutan, dan optimasi anti-lag.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR LENGKAP:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Semua fitur HC Basic.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Custom TAB &amp; Scoreboard Dinamis.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Custom Rank 1 - 6 &amp; Prefix Khusus.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Custom Permission &amp; LuckPerms Hierarchy.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Death Scoreboard &amp; Revive System.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Bedrock &amp; Java Support + Optimasi Server.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" style="background: linear-gradient(135deg, #EA580C 0%, #9A3412 100%);" onclick="selectPackageOrder('HC Complete', 25000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 3: HC Complete++ -->
+              <article class="store-product-card card-featured-sigma reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-hc-complete.jpg" alt="HC Complete++" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge" style="color: #FDBA74; border-color: rgba(249, 115, 22, 0.4);">HARDCORE PRO</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-fire"></i> RECOMMENDED
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name" style="color: #FED7AA;">HC Complete++</h4>
+                    <div class="product-price" style="color: #FB923C;">Rp35.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Sistem Hardcore profesional lengkap dengan lobi khusus, hologram top kill, dan anti-cheat.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR PRO:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Semua fitur HC Complete.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Dedicated Lobby &amp; Spawn Area.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Prefix Rank 1 - 8 &amp; Tag Pemain.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Advanced TAB &amp; Custom Death Scoreboard.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Top Kill &amp; Survival Time Hologram.</span></li>
+                      <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Security System &amp; Anti-Crash Protection.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order btn-sigma-order w-100" style="background: linear-gradient(135deg, #F97316 0%, #C2410C 100%);" onclick="selectPackageOrder('HC Complete++', 35000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-bolt"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY 5: ALTAR SMP ================= -->
+          <div class="catalog-category-block" id="cat-altar">
+            <div class="category-header-row reveal-on-scroll">
+              <div class="cat-title-wrap">
+                <div class="cat-icon-badge"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div>
+                  <h3 class="category-title">ALTAR SMP</h3>
+                  <p class="category-desc">Mode RPG magis dengan senjata legendaris, kemampuan skill spesial, dan resource pack kustom.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-grid-2col">
+              <!-- Product 1: Altar SMP S1 -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-altarsmp-s1.jpg" alt="Altar SMP S1" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">ALTAR SMP S1</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">Altar SMP S1</h4>
+                    <div class="product-price">Rp80.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Setup paket Altar SMP Season 1 dengan sistem senjata legendaris dan konfigurasi kemampuan.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR UTAMA:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Setup Plugin Altar SMP Resmi.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Legendary Weapon System &amp; Abilities.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Weapon Configuration &amp; Balancing.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Resource Pack Setup Dasar.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Custom TAB &amp; Scoreboard Altar.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Spawn System, Rank Prefix 1 - 7.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Basic Rank &amp; Permission (LuckPerms).</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Support Versi Minecraft 1.20+.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('Altar SMP S1', 80000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Product 2: Altar SMP S2 (Legendary) -->
+              <article class="store-product-card card-featured-sigma reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-altarsmp-s2.jpg" alt="Altar SMP S2" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">ALTAR SMP S2</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-crown"></i> LEGENDARY
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name text-purple-light">Altar SMP S2</h4>
+                    <div class="product-price text-purple-light">Rp120.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Season 2 terlengkap dengan kustom senjata v2, resource pack audio-visual, dan sistem crate.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR LEGENDARIS:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Semua fitur Altar SMP S1.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Konfigurasi Legendary Weapon Lebih Lengkap.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Custom Weapon Abilities v2 &amp; Special Skills.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Armor &amp; Weapon Damage Balancing.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Advanced TAB &amp; Scoreboard Dinamis.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Resource Pack Setup (Custom Sound &amp; Texture).</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Hit &amp; Death Leaderboard Hologram.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Crate &amp; Reward System + Support Bedrock (1.20+).</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order btn-sigma-order w-100" onclick="selectPackageOrder('Altar SMP S2', 120000)">
+                      <span>Pesan Paket</span>
+                      <i class="fa-solid fa-bolt"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- TRANSITION BUTTON TO VIEW SETUP (Match User Image) -->
+            <div class="slide-transition-wrap text-center reveal-on-scroll">
+              <button type="button" class="btn btn-more-setup-slide" onclick="switchMainTab('setup')">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Lihat Paket Setup Lainnya</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <!-- END SLIDE 1 / FEATURED PACKAGES -->
+      </div>
+    </section>
+  </div>
+  <!-- ================= END VIEW 1: PAKET ================= -->
+
+  <!-- ================= VIEW 2: SETUP (SUB SERVICES & PLUGINS) ================= -->
+  <div class="store-view" id="view-setup">
+    <section class="section setup-view-section" id="setupSection">
+      <div class="container">
+        <!-- Slide 2 Header & Back Control -->
+        <div class="slide-header-bar reveal-on-scroll">
+          <button type="button" class="btn-back-slide" onclick="switchMainTab('paket')">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Kembali ke Paket Pilihan</span>
+          </button>
+          <div class="slide-badge-title">
+            <span class="section-badge">OUR SERVICES</span>
+            <h2 class="section-heading mb-0">Paket Setup Premium++</h2>
+            <p class="section-lead text-center mt-1 mb-0" style="font-size: 0.95rem; color: var(--text-muted);">Paket setup server dan plugin khusus.</p>
+          </div>
+        </div>
+
+        <!-- ================= CATEGORY 6: PAKET SETUP PREMIUM++ ================= -->
+        <div class="catalog-category-block" id="cat-setup-premium">
+          <!-- Sub-category 1: Request Setup Server -->
+          <div class="sub-category-divider reveal-on-scroll">
+            <span class="sub-category-title-text"><i class="fa-solid fa-thumbtack text-purple"></i> Request Setup Server</span>
+            <div class="sub-category-line"></div>
+          </div>
+
+          <!-- Wide Horizontal Card: Custom Server Setup -->
+          <div class="wide-service-card reveal-on-scroll" onclick="selectPackageOrder('Custom Server Setup', 0)">
+            <div class="wide-card-left">
+              <div class="wide-card-title-row">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h4 class="wide-card-title">Custom Server Setup</h4>
+              </div>
+              <p class="wide-card-desc">Request setup sesuai kebutuhan dan konsep server. Harga menyesuaikan fitur serta tingkat pengerjaan.</p>
+            </div>
+            <div class="wide-card-right">
+              <span class="wide-card-price">Rp5.000-800.000</span>
+              <button type="button" class="btn btn-sm btn-primary" onclick="event.stopPropagation(); selectPackageOrder('Custom Server Setup', 0)">
+                <span>Pesan</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sub-category 2: Setup Donut SMP -->
+          <div class="sub-category-divider reveal-on-scroll">
+            <span class="sub-category-title-text"><i class="fa-solid fa-cookie-bite text-purple"></i> Setup Donut SMP</span>
+            <div class="sub-category-line"></div>
+          </div>
+
+          <div class="catalog-grid-2col">
+            <!-- Product 2: Setup Donut SMP (Complete Core) -->
+            <article class="store-product-card card-featured-sigma reveal-on-scroll">
+              <div class="product-banner-wrap">
+                <img src="assets/banner-donut-core.jpg" alt="Setup Donut SMP Core" class="product-banner-img" width="800" height="450" loading="lazy">
+                <span class="product-cat-badge">DONUT SMP COMPLETE</span>
+                <span class="product-featured-badge">
+                  <i class="fa-solid fa-gem"></i> 450+ FEATURES
+                </span>
+              </div>
+              <div class="product-info-wrap">
+                <div class="product-title-row">
+                  <h4 class="product-name text-purple-light">Setup Donut SMP</h4>
+                  <div class="product-price text-purple-light">Rp145.000</div>
+                </div>
+                <p class="product-short-desc">
+                  Replika lengkap Donut SMP Core: sistem ekonomi, shards, 15x custom kits, skills, dan AFK zones.
+                </p>
+                <div class="product-features-box">
+                  <span class="features-box-label">FITUR UNGGULAN:</span>
+                  <ul class="product-feature-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Plugin Economy + XP Coins System.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Shards Economy &amp; 15x+ Custom Kits.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>RTP (Overworld, Nether &amp; End) + TPA.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Skills System, Auction House (/ah) &amp; Bounty.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>AFK Menus, Multiple AFK Zones &amp; Spawners GUI.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Sleep &amp; Sell Menu + Trade System.</span></li>
+                  </ul>
+                </div>
+                <div class="product-actions-wrap">
+                  <button type="button" class="btn btn-store-order btn-sigma-order w-100" onclick="selectPackageOrder('Setup Donut SMP', 145000)">
+                    <span>Pesan Setup Donut SMP</span>
+                    <i class="fa-solid fa-bolt"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 3: Setup Laper Hardcore -->
+            <article class="store-product-card reveal-on-scroll delay-1">
+              <div class="product-banner-wrap">
+                <img src="assets/banner-hardcore.jpg" alt="Setup Laper Hardcore" class="product-banner-img" width="800" height="450" loading="lazy">
+                <span class="product-cat-badge" style="color: #FDBA74; border-color: rgba(249, 115, 22, 0.4);">LAPER HARDCORE FULL</span>
+              </div>
+              <div class="product-info-wrap">
+                <div class="product-title-row">
+                  <h4 class="product-name">Setup Laper Hardcore</h4>
+                  <div class="product-price" style="color: #FB923C;">Rp190.000</div>
+                </div>
+                <p class="product-short-desc">
+                  Setup Hardcore survival paling intensif dengan animasi kematian, difficulty system, dan proteksi DDoS.
+                </p>
+                <div class="product-features-box">
+                  <span class="features-box-label">FITUR HARDCORE LENGKAP:</span>
+                  <ul class="product-feature-list">
+                    <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Setup Hardcore Survival Lengkap.</span></li>
+                    <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Animation Death (Laper HC) + Difficulty System.</span></li>
+                    <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Ban System, Spawn, Set Home &amp; Warp System.</span></li>
+                    <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Custom MOTD, Rank &amp; Permission Hierarchy.</span></li>
+                    <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Crack &amp; Original Support (Versi 1.20 - 1.21).</span></li>
+                    <li><i class="fa-solid fa-circle-check" style="color: #F97316;"></i> <span>Anti-Exploit, DDoS &amp; Bot Protection.</span></li>
+                  </ul>
+                </div>
+                <div class="product-actions-wrap">
+                  <button type="button" class="btn btn-store-order w-100" style="background: linear-gradient(135deg, #EA580C 0%, #9A3412 100%);" onclick="selectPackageOrder('Setup Laper Hardcore', 190000)">
+                    <span>Pesan Setup Laper Hardcore</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ================= CATEGORY 7: PAKET PLUGIN ================= -->
+        <div class="catalog-category-block" id="cat-plugin">
+          <div class="category-header-row reveal-on-scroll">
+            <div class="cat-title-wrap">
+              <div class="cat-icon-badge"><i class="fa-solid fa-puzzle-piece"></i></div>
+              <div>
+                <h3 class="category-title">PAKET PLUGIN</h3>
+                <p class="category-desc">Plugin siap pakai bergaya server populer, proteksi anti bot, serta pembuatan custom plugin.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="catalog-grid-2col">
+              <!-- Plugin 1: Ultimate Donut SMP Plugin (Foto 3) -->
+              <article class="store-product-card card-featured-sigma reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-donut-ultimate.jpg" alt="Donut Ultimate SMP Plugin" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">ULTIMATE PLUGIN</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-crown"></i> BEST SELLER
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name text-purple-light">Ultimate Donut SMP</h4>
+                    <div class="product-price text-purple-light">Rp45.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Paket plugin ultimate dengan 40+ item kustom, sistem bounty, tim, dan crate reward.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR PLUGIN:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Paket plugin ultimate Donut SMP.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>40+ item kustom &amp; mekanik khusus.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Economy &amp; Shards System.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Shop &amp; Sell GUI interaktif.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Bounty, Team System &amp; Crate Rewards.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order btn-sigma-order w-100" onclick="selectPackageOrder('Ultimate Donut SMP Plugin', 45000)">
+                      <span>Pesan Ultimate Plugin</span>
+                      <i class="fa-solid fa-bolt"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Plugin 2: Donut Shop Clone V1 (Foto 4) -->
+              <article class="store-product-card reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-donut-v1.jpg" alt="Donut Shop Clone V1" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">SHOP CLONE V1</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">Donut Shop Clone V1</h4>
+                    <div class="product-price">Rp26.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Shop GUI bergaya Donut SMP dengan konfigurasi harga fleksibel dan support Vault.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR PLUGIN:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Shop GUI bergaya Donut SMP.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Kategori item lengkap &amp; mudah diatur.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Konfigurasi harga jual dan beli item.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Support Vault &amp; sistem ekonomi Minecraft.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Tanpa tools shards (versi clean &amp; ringan).</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('Donut Shop Clone V1', 26000)">
+                      <span>Pesan Plugin</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Plugin 3: Donut Shop Clone V2 (Foto 5) -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-donut-v2.jpg" alt="Donut Shop Clone V2" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">SHOP CLONE V2</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-bolt"></i> NEW VERSION
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name text-purple-light">Donut Shop Clone V2</h4>
+                    <div class="product-price text-purple-light">Rp35.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Shop GUI v2 dengan kategori kargo item, support trade shards, dan multi-currency.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR PLUGIN:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Semua fitur Shop Clone V1.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Shop GUI interaktif v2 bertingkat.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Konfigurasi kargo item &amp; pasar dinamis.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Support PlayerPoints &amp; Trade Shards.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Integrasi Shards &amp; Multi-Currency.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order btn-sigma-order w-100" onclick="selectPackageOrder('Donut Shop Clone V2', 35000)">
+                      <span>Pesan Plugin</span>
+                      <i class="fa-solid fa-bolt"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Plugin 4: Plugin Anti Bot -->
+              <article class="store-product-card reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-fimhaikucore.svg" alt="Plugin Anti Bot FimHaiku Core" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">SECURITY PLUGIN</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">Plugin Anti Bot</h4>
+                    <div class="product-price">Rp17.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Proteksi server dari serangan spam bot, flood join, dan bot login otomatis.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR PROTEKSI:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Proteksi spam bot &amp; flood connection.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Verifikasi pemain otomatis tanpa captcha ribet.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Proteksi login spam &amp; rate limit IP.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Whitelist &amp; blacklist IP pintar.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Ringan, tanpa database &amp; bebas lag.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('Plugin Anti Bot', 17000)">
+                      <span>Pesan Plugin</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Service: Custom Plugin Development -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-plugin.jpg" alt="Jasa Custom Plugin Minecraft" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">CUSTOM DEV</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">Jasa Custom Plugin</h4>
+                    <div class="product-price">Rp0 - Rp250.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Pembuatan plugin Minecraft eksklusif berdasarkan permintaan dan kebutuhan spesifik server kamu.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">FITUR LAYANAN:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Custom commands, mechanics &amp; GUI menu.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Penyimpanan aman (YAML, SQLite, MySQL).</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Kode bersih berbasis Java/Kotlin.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Garansi revisi fungsional &amp; bebas bug.</span></li>
+                    </ul>
+                    <p class="product-note-line">
+                      <i class="fa-solid fa-circle-info"></i> Harga akhir ditentukan berdasarkan tingkat kesulitan permintaan.
+                    </p>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectServiceOrder('JASA CUSTOM PLUGIN')">
+                      <span>Pesan Custom Plugin</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+
+            </div>
+          </div>
+
+          <!-- ================= CATEGORY C: PAKET STARTER ================= -->
+          <div class="catalog-category-block" id="paket">
+            <div class="category-header-row reveal-on-scroll">
+              <div class="cat-title-wrap">
+                <div class="cat-icon-badge"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h3 class="category-title">PAKET JASA STARTER</h3>
+                  <p class="category-desc">Paket hemat all-in-one paling diminati pemilik server baru untuk peluncuran instan.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog-grid-2col">
+              <!-- PRODUCT 1: PAKET HEMAT -->
+              <article class="store-product-card reveal-on-scroll">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-hemat.svg" alt="Paket Hemat Setup Server" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">PAKET STARTER</span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name">PAKET HEMAT</h4>
+                    <div class="product-price">Rp15.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Setup server dan konfigurasi dasar untuk server Minecraft skala awal.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">ISI PAKET:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Setup server engine (Paper / Purpur).</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Instalasi maksimal 5 plugin pilihan.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Konfigurasi dasar server &amp; permissions.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Support Java &amp; Bedrock Crossplay.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('PAKET HEMAT', 15000)">
+                      <span>Pesan Paket Hemat</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- PRODUCT 2: PAKET SIGMA (BEST SELLER) -->
+              <article class="store-product-card card-featured-sigma reveal-on-scroll delay-1">
+                <div class="product-banner-wrap">
+                  <img src="assets/banner-sigma.svg" alt="Paket Sigma Setup Server" class="product-banner-img" width="800" height="450" loading="lazy">
+                  <span class="product-cat-badge">PAKET POPULER</span>
+                  <span class="product-featured-badge">
+                    <i class="fa-solid fa-crown"></i> BEST SELLER
+                  </span>
+                </div>
+                <div class="product-info-wrap">
+                  <div class="product-title-row">
+                    <h4 class="product-name text-purple-light">PAKET SIGMA</h4>
+                    <div class="product-price text-purple-light">Rp25.000</div>
+                  </div>
+                  <p class="product-short-desc">
+                    Paket terpopuler: setup lengkap, hingga 15 plugin, ditambah promosi server aktif.
+                  </p>
+                  <div class="product-features-box">
+                    <span class="features-box-label">ISI PAKET:</span>
+                    <ul class="product-feature-list">
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Setup server Minecraft lengkap.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Instalasi maksimal 15 plugin penting.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Konfigurasi server &amp; optimasi anti-lag.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Promosi server ke jaringan komunitas Minecraft.</span></li>
+                      <li><i class="fa-solid fa-circle-check"></i> <span>Support Java &amp; Bedrock Crossplay.</span></li>
+                    </ul>
+                  </div>
+                  <div class="product-actions-wrap">
+                    <button type="button" class="btn btn-store-order btn-sigma-order w-100" onclick="selectPackageOrder('PAKET SIGMA', 25000)">
+                      <span>Pesan Paket Sigma</span>
+                      <i class="fa-solid fa-bolt"></i>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+        <!-- END SLIDE 2 -->
+
+      </div>
+    </section>
+  </div>
+  <!-- ================= END VIEW 2: SETUP ================= -->
+
+  <!-- ================= VIEW 3: PROMOTION (PROMOSI VIDEO & PHOTO SLIDE) ================= -->
+  <div class="store-view" id="view-promotion">
+    <section class="section promo-view-section" id="katalog-promotion">
+      <div class="container">
+        <!-- Promotion View Header -->
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <h2 class="section-heading">Promotion</h2>
+          <p class="section-lead">
+            Pilih paket promosi video sesuai kebutuhan konten server atau produk kamu.
+          </p>
+        </div>
+
+        <!-- CATEGORY: PAKET PROMOSI VIDEO -->
+        <div class="catalog-category-block" id="cat-promo-video">
+          <div class="promo-category-bar-clean reveal-on-scroll">
+            <span class="category-clapper-icon">🎬</span>
+            <h3>Paket Promosi Video</h3>
+          </div>
+
+          <div class="promo-video-grid-2col">
+            <!-- PAKET 01: Basic Promotion -->
+            <article class="promo-video-card-clean reveal-on-scroll">
+              <span class="promo-video-pill-tag">PAKET 01</span>
+              <h4 class="promo-video-title">Basic Promotion</h4>
+              <div class="promo-video-price">Rp17.000</div>
+              <ul class="promo-video-features">
+                <li><span class="diamond-bullet">✦</span> <span>Durasi 30-40 detik</span></li>
+                <li><span class="diamond-bullet">✦</span> <span>1x revisi</span></li>
+                <li><span class="diamond-bullet">✦</span> <span>HD+</span></li>
+              </ul>
+              <button type="button" class="btn-promo-action-dark" onclick="selectPackageOrder('BASIC PROMOTION TIKTOK', 17000)">
+                <span>Pesan Paket</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </article>
+
+            <!-- PAKET 02: HD++ Promotion -->
+            <article class="promo-video-card-clean reveal-on-scroll delay-1">
+              <span class="promo-video-pill-tag">PAKET 02</span>
+              <h4 class="promo-video-title">HD++ Promotion</h4>
+              <div class="promo-video-price">Rp25.000</div>
+              <ul class="promo-video-features">
+                <li><span class="diamond-bullet">✦</span> <span>Durasi 30-40 detik</span></li>
+                <li><span class="diamond-bullet">✦</span> <span>HD++</span></li>
+                <li><span class="diamond-bullet">✦</span> <span>2x revisi</span></li>
+              </ul>
+              <button type="button" class="btn-promo-action-gradient" onclick="selectPackageOrder('HD++ PROMOTION TIKTOK', 25000)">
+                <span>Pesan Paket</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </article>
+
+            <!-- PAKET 03: Advanced Promotion -->
+            <article class="promo-video-card-clean reveal-on-scroll delay-2">
+              <span class="promo-video-pill-tag">PAKET 03</span>
+              <h4 class="promo-video-title">Advanced Promotion</h4>
+              <div class="promo-video-price">Rp35.000</div>
+              <ul class="promo-video-features">
+                <li><span class="diamond-bullet">✦</span> <span>Durasi 40-60 detik</span></li>
+                <li><span class="diamond-bullet">✦</span> <span>Full HD / 4K + Cinematic</span></li>
+                <li><span class="diamond-bullet">✦</span> <span>Revisi fleksibel</span></li>
+              </ul>
+              <button type="button" class="btn-promo-action-dark" onclick="selectPackageOrder('ADVANCED PROMOTION TIKTOK', 35000)">
+                <span>Pesan Paket</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </article>
+          </div>
+        </div>
+
+        <!-- CATEGORY: JASA PROMOSI PHOTO SLIDE -->
+        <div class="catalog-category-block" id="cat-promo-photo">
+          <div class="category-header-row reveal-on-scroll">
+            <div class="cat-title-wrap">
+              <div class="cat-icon-badge"><i class="fa-solid fa-images"></i></div>
+              <div>
+                <h3 class="category-title">JASA PROMOSI PHOTO SLIDE</h3>
+                <p class="category-desc">Desain grafis carousel feed &amp; TikTok slide foto resolusi tinggi untuk memikat perhatian calon member baru.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-grid-3col">
+            <!-- Paket 1 Photo Slide -->
+            <article class="store-product-card reveal-on-scroll">
+              <div class="product-banner-wrap">
+                <img src="assets/banner-promo-slide.jpg" alt="Promosi Photo Slide Paket 1 FIM HAIKU" class="product-banner-img" width="800" height="450" loading="lazy">
+                <span class="product-cat-badge">SINGLE SLIDE</span>
+              </div>
+              <div class="product-info-wrap">
+                <div class="product-title-row">
+                  <h4 class="product-name">Paket 1 (1 Slide)</h4>
+                  <div class="product-price">Rp2.000</div>
+                </div>
+                <p class="product-short-desc">
+                  1 Slide grafis promosi server Minecraft dengan visual modern dan tajam.
+                </p>
+                <div class="product-features-box">
+                  <span class="features-box-label">FITUR PHOTO SLIDE:</span>
+                  <ul class="product-feature-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span>1 Slide foto promosi grafis server.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Desain visual tajam, rapi &amp; eye-catching.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Format PNG resolusi tinggi siap upload.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Revisi minor 1x.</span></li>
+                  </ul>
+                </div>
+                <div class="product-actions-wrap">
+                  <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('PROMOSI PHOTO SLIDE PAKET 1', 2000)">
+                    <span>Pesan Paket</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Paket 2 Photo Slide -->
+            <article class="store-product-card reveal-on-scroll delay-1">
+              <div class="product-banner-wrap">
+                <img src="assets/banner-promo-slide.jpg" alt="Promosi Photo Slide Paket 2 FIM HAIKU" class="product-banner-img" width="800" height="450" loading="lazy">
+                <span class="product-cat-badge badge-blue">CAROUSEL</span>
+              </div>
+              <div class="product-info-wrap">
+                <div class="product-title-row">
+                  <h4 class="product-name">Paket 2 (3 Slide)</h4>
+                  <div class="product-price text-blue">Rp5.000</div>
+                </div>
+                <p class="product-short-desc">
+                  3 Slide carousel bertema untuk feed Instagram dan TikTok Photo Slide.
+                </p>
+                <div class="product-features-box">
+                  <span class="features-box-label">FITUR PHOTO SLIDE:</span>
+                  <ul class="product-feature-list">
+                    <li><i class="fa-solid fa-circle-check text-blue"></i> <span>3 Slide foto carousel bertema terstruktur.</span></li>
+                    <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Cover banner eye-catching &amp; modern.</span></li>
+                    <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Showcase info server, IP, port &amp; fitur.</span></li>
+                    <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Cocok untuk feed IG &amp; TikTok Slide.</span></li>
+                    <li><i class="fa-solid fa-circle-check text-blue"></i> <span>Revisi 2x.</span></li>
+                  </ul>
+                </div>
+                <div class="product-actions-wrap">
+                  <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('PROMOSI PHOTO SLIDE PAKET 2', 5000)">
+                    <span>Pesan Paket</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Paket 3 Photo Slide -->
+            <article class="store-product-card reveal-on-scroll delay-2">
+              <div class="product-banner-wrap">
+                <img src="assets/banner-promo-slide.jpg" alt="Promosi Photo Slide Paket 3 FIM HAIKU" class="product-banner-img" width="800" height="450" loading="lazy">
+                <span class="product-cat-badge">PREMIUM SLIDE</span>
+              </div>
+              <div class="product-info-wrap">
+                <div class="product-title-row">
+                  <h4 class="product-name">Paket 3 (5-7 Slide)</h4>
+                  <div class="product-price">Rp9.000</div>
+                </div>
+                <p class="product-short-desc">
+                  5 sampai 7 slide foto carousel lengkap dengan alur cerita visual promosi server.
+                </p>
+                <div class="product-features-box">
+                  <span class="features-box-label">FITUR PHOTO SLIDE:</span>
+                  <ul class="product-feature-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span>5 sampai 7 slide foto carousel interaktif.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Storytelling visual promosi server lengkap.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Showcase arena, ranks, custom items &amp; guild.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>Copywriting caption siap pakai langsung posting.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span>File grafis master resolusi tinggi.</span></li>
+                  </ul>
+                </div>
+                <div class="product-actions-wrap">
+                  <button type="button" class="btn btn-store-order w-100" onclick="selectPackageOrder('PROMOSI PHOTO SLIDE PAKET 3', 9000)">
+                    <span>Pesan Paket</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+  <!-- ================= END VIEW 3: PROMOTION ================= -->
+
+  <!-- ================= VIEW 4: KONTAK (WORK, CUSTOM, ADVANTAGES, TESTI, FAQ, CONTACT) ================= -->
+  <div class="store-view" id="view-kontak">
+    <div class="contact-view-wrapper pt-5">
+      <div class="container">
+        <!-- Top Card: LET'S WORK - Siap Bangun Server Kamu? -->
+        <div class="contact-cta-card reveal-on-scroll mb-4">
+          <div class="cta-inner text-center">
+            <span class="section-badge">LET'S WORK</span>
+            <h2 class="section-heading">Siap Bangun Server Kamu?</h2>
+            <p class="section-lead">
+              Konsultasikan ide servermu sekarang bersama tim FIM HAIKU. Mulai dari konsep gameplay, konfigurasi plugin, hingga peluncuran publik.
+            </p>
+            <div class="contact-btn-group-center">
+              <a href="https://api.whatsapp.com/send/?phone=6283119678265" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Pesan via WhatsApp</span>
+              </a>
+              <a href="https://discord.com/invite/J6r4JK2jRw" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                <i class="fa-brands fa-discord"></i>
+                <span>Join Discord Server</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Request Card: CUSTOM SERVER SERVICE - Gak Nemu Paket Server yang Lu Cari? -->
+        <div class="contact-cta-card card-request-custom reveal-on-scroll mb-5">
+          <div class="cta-inner text-center">
+            <span class="section-badge">CUSTOM SERVER SERVICE</span>
+            <h2 class="section-heading">Gak Nemu Paket Server yang Lu Cari?</h2>
+            <p class="section-lead">
+              Punya konsep unik seperti MMORPG, Prison, Skyblock Custom, atau Minigames khusus? FIM HAIKU siap develop sistem server impianmu secara kustom dari nol.
+            </p>
+            <div class="contact-btn-group-center">
+              <button type="button" class="btn btn-primary btn-lg" onclick="selectServiceOrder('JASA SETUP SERVER')">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Request Custom Setup</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MENGAPA MEMILIH FIM HAIKU ================= -->
+    <section class="section keunggulan-section" id="keunggulan">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <span class="section-badge">ADVANTAGES</span>
+          <h2 class="section-heading">Mengapa Memilih FIM HAIKU?</h2>
+          <p class="section-lead">
+            Kami mendedikasikan pengalaman kami untuk memberikan hasil terbaik dan kenyamanan maksimal bagi setiap klien.
+          </p>
+        </div>
+
+        <div class="keunggulan-cards-grid">
+          <!-- 1: Harga Terjangkau -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <h3 class="feature-title">Harga terjangkau.</h3>
+            <p class="feature-desc">
+              Biaya transparan, ramah untuk kantong pelajar maupun komunitas server, tanpa biaya tersembunyi.
+            </p>
+          </div>
+
+          <!-- 2: Pelayanan Ramah -->
+          <div class="feature-box reveal-on-scroll delay-1">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-heart-circle-check"></i>
+            </div>
+            <h3 class="feature-title">Pelayanan ramah.</h3>
+            <p class="feature-desc">
+              Konsultasi santai dan solutif. Kami siap mendengarkan kebutuhan server impianmu dari awal hingga siap rilis.
+            </p>
+          </div>
+
+          <!-- 3: Setup Sesuai Kebutuhan -->
+          <div class="feature-box reveal-on-scroll delay-2">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <h3 class="feature-title">Setup server sesuai kebutuhan.</h3>
+            <p class="feature-desc">
+              Dapat disesuaikan sepenuhnya untuk mode Survival SMP, Skyblock, RPG, Bedwars, hingga Network Lobby.
+            </p>
+          </div>
+
+          <!-- 4: Request Custom Plugin -->
+          <div class="feature-box reveal-on-scroll">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="feature-title">Bisa request plugin custom.</h3>
+            <p class="feature-desc">
+              Punya ide unik yang belum ada plugin publiknya? Kami siap buatkan plugin khusus eksklusif untuk servermu.
+            </p>
+          </div>
+
+          <!-- 5: Berbagai Versi -->
+          <div class="feature-box feature-box-wide reveal-on-scroll delay-1">
+            <div class="feature-icon-circle">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <h3 class="feature-title">Mendukung berbagai versi Minecraft.</h3>
+            <p class="feature-desc">
+              Mulai dari versi legacy 1.8.8, 1.12.2, 1.16.5, hingga versi terbaru 1.20.x, 1.21.x serta crossplay Bedrock Edition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONI PELANGGAN (DEMO NOTICE) ================= -->
+    <section class="section testimoni-section" id="testimoni">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-title-wrap text-center reveal-on-scroll">
+          <span class="section-badge">TESTIMONIALS</span>
+          <h2 class="section-heading">Testimoni Pelanggan</h2>
+          <div class="demo-notice-chip">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Data ulasan di bawah menggunakan label <strong>[DEMO]</strong> sebagai pratinjau tampilan hingga testimoni asli klien diintegrasikan.</span>
+          </div>
+        </div>
+
+        <div class="testimonial-cards-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testi-header">
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="demo-label">[DEMO]</span>
+            </div>
+            <p class="testi-quote">
+              "Setup server SMP selesai dalam hitungan jam. Konfigurasi permission sama rank rapi banget, pemain Bedrock juga bisa login lancar tanpa kendala."
+            </p>
+            <div class="testi-author-info">
+              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong class="author-name">Alex_Craft</strong>
+                <span class="author-service">Paket Sigma (Purpur 1.21)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card reveal-on-scroll delay-1">
+            <div class="testi-header">
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="demo-label">[DEMO]</span>
+            </div>
+            <p class="testi-quote">
+              "Pesan custom plugin untuk sistem quest dan hadiah harian. Kodenya ringan, ramah performa, dan revisi langsung dibereskan cepat sama admin FIM HAIKU."
+            </p>
+            <div class="testi-author-info">
+              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong class="author-name">RianGamer99</strong>
+                <span class="author-service">Jasa Custom Plugin</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card reveal-on-scroll delay-2">
+            <div class="testi-header">
+              <div class="testi-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <span class="demo-label">[DEMO]</span>
+            </div>
+            <p class="testi-quote">
+              "Jasa promosinya efektif banget! Server Discord kami nambah puluhan member baru dan online player mingguan naik signifikan. Sangat direkomendasikan!"
+            </p>
+            <div class="testi-author-info">
+              <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <strong class="author-name">MinecraftNusantara</strong>
+                <span class="author-service">Jasa Promosi Server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-left-col reveal-on-scroll">
+          <span class="section-badge">FAQ</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <p class="faq-helper-text">
+            Pertanyaan yang sering diajukan mengenai layanan setup server, custom plugin, dan prosedur pengerjaan di FIM HAIKU.
+          </p>
+          <div class="faq-cta-box">
+            <h4>Butuh konsultasi khusus?</h4>
+            <p>Admin kami siap berdiskusi langsung perihal konsep servermu.</p>
+            <a href="#kontak" class="btn btn-secondary btn-sm mt-3">
+              <i class="fa-solid fa-headset"></i> Hubungi Admin
+            </a>
+          </div>
+        </div>
+
+        <div class="faq-right-col reveal-on-scroll delay-1">
+          <div class="accordion-container" id="faqAccordion">
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Apakah FIM HAIKU melayani semua versi Minecraft?</span>
+                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Ya! FIM HAIKU melayani hampir semua versi Minecraft, baik Java Edition (1.8.8, 1.12.2, 1.16.5, 1.19.x, 1.20.x, hingga 1.21.x terbaru) maupun Bedrock Edition melalui bridging GeyserMC dan Floodgate.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Apakah bisa request plugin?</span>
+                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Tentu bisa! Kamu bisa meminta pemasangan plugin publik yang kamu inginkan, atau memesan pembuatan plugin custom dari awal jika memiliki ide mekanisme permainan yang belum ada di pasaran.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Berapa lama pengerjaan?</span>
+                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Waktu pengerjaan bergantung pada paket. Paket Hemat biasanya selesai dalam beberapa jam hingga 1 hari kerja. Paket Sigma dan Custom Plugin berkisar antara 1 hingga 3 hari kerja.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Apakah bisa menggunakan hosting sendiri?</span>
+                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Bisa! Kamu bisa menyediakan akses panel hosting server milikmu sendiri (Pterodactyl, Multicraft, VPS, dll) atau kami juga bisa mengirimkan file server zip lengkap siap jalankan.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Bagaimana cara melakukan pemesanan?</span>
+                <i class="fa-solid fa-chevron-down faq-arrow"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>Klik tombol <strong>Pesan Sekarang</strong> atau <strong>Pilih Paket</strong> di website ini, lengkapi formulir kebutuhan servermu, periksa ringkasan pada halaman konfirmasi, lalu kirim pesananmu langsung ke WhatsApp Admin atau tiket Discord FIM HAIKU.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SISTEM KONTAK ================= -->
+    <section class="section kontak-section" id="kontak">
+      <div class="container">
+        <div class="contact-hub-card reveal-on-scroll">
+          <div class="contact-hub-header text-center">
+            <span class="section-badge">GET IN TOUCH</span>
+            <h2 class="section-heading">Hubungi Admin FIM HAIKU</h2>
+            <p class="section-lead">
+              Pilih kanal kontak di bawah untuk konsultasi arsitektur server, tanya jawab, atau konfirmasi pesanan.
+            </p>
+          </div>
+
+          <div class="contact-buttons-row">
+            <!-- WhatsApp Button -->
+            <a href="https://api.whatsapp.com/send/?phone=6283119678265" target="_blank" rel="noopener noreferrer" class="contact-channel-btn btn-wa" id="btnContactWa">
+              <div class="channel-icon-box">
+                <img src="assets/icon-whatsapp.svg" alt="WhatsApp Icon" width="26" height="26">
+              </div>
+              <div class="channel-text-box">
+                <span class="channel-label">Hubungi Admin FIM HAIKU</span>
+                <strong class="channel-title">WhatsApp Admin</strong>
+              </div>
+            </a>
+
+            <!-- Discord Button -->
+            <a href="https://discord.com/invite/J6r4JK2jRw" target="_blank" rel="noopener noreferrer" class="contact-channel-btn btn-discord" id="btnContactDiscord">
+              <div class="channel-icon-box">
+                <img src="assets/icon-discord.svg" alt="Discord Icon" width="26" height="26">
+              </div>
+              <div class="channel-text-box">
+                <span class="channel-label">Komunitas &amp; Tiket</span>
+                <strong class="channel-title">Discord Server</strong>
+              </div>
+            </a>
+          </div>
+
+          <p class="contact-placeholder-note text-center">
+            <i class="fa-brands fa-whatsapp text-purple"></i> WhatsApp Admin: <code>0831-1967-8265</code> | <i class="fa-brands fa-discord text-blue"></i> Discord: <code>discord.com/invite/J6r4JK2jRw</code>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- ================= END VIEW 4: KONTAK ================= -->
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-main-grid">
+      <!-- Col 1: Brand -->
+      <div class="footer-col-brand">
+        <a href="#hero" class="footer-logo" aria-label="FIM HAIKU Beranda">
+          <img src="assets/logo.png" alt="FIM HAIKU Mascot Logo" class="footer-logo-img" width="48" height="48">
+          <div class="brand-name-wrap">
+            <span class="brand-title">FIM HAIKU</span>
+            <span class="brand-subtitle">JASA SETUP SERVER</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">
+          Marketplace penyedia jasa setup server Minecraft, pengembangan custom plugin, dan promosi server terpercaya di Indonesia. Wujudkan server impianmu bersama FIM HAIKU.
+        </p>
+        <div class="footer-active-pill">
+          <span class="active-dot"></span>
+          <span>Sistem Pemesanan Aktif</span>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigasi -->
+      <div class="footer-col-links">
+        <h4 class="footer-title">Navigasi</h4>
+        <ul class="footer-list">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#katalog">Semua Jasa</a></li>
+          <li><a href="#paket">Paket Jasa</a></li>
+          <li><a href="#keunggulan">Keunggulan</a></li>
+          <li><a href="#testimoni">Testimoni [DEMO]</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Layanan -->
+      <div class="footer-col-links">
+        <h4 class="footer-title">Layanan Kami</h4>
+        <ul class="footer-list">
+          <li><a href="javascript:void(0)" onclick="selectServiceOrder('JASA SETUP SERVER')">Jasa Setup Server</a></li>
+          <li><a href="javascript:void(0)" onclick="selectServiceOrder('JASA PROMOSI')">Jasa Promosi Server</a></li>
+          <li><a href="javascript:void(0)" onclick="selectServiceOrder('JASA CUSTOM PLUGIN')">Jasa Custom Plugin</a></li>
+          <li><a href="javascript:void(0)" onclick="selectPackageOrder('PAKET HEMAT', 15000)">Paket Hemat (Rp15.000)</a></li>
+          <li><a href="javascript:void(0)" onclick="selectPackageOrder('PAKET SIGMA', 25000)">Paket Sigma (Rp25.000)</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Kontak & Operasional -->
+      <div class="footer-col-links">
+        <h4 class="footer-title">Kontak &amp; Komunitas</h4>
+        <ul class="footer-list footer-contact-items">
+          <li><i class="fa-brands fa-whatsapp text-purple"></i> <a href="https://api.whatsapp.com/send/?phone=6283119678265" target="_blank" rel="noopener noreferrer">WhatsApp Admin</a></li>
+          <li><i class="fa-brands fa-discord text-blue"></i> <a href="https://discord.com/invite/J6r4JK2jRw" target="_blank" rel="noopener noreferrer">Discord Komunitas</a></li>
+          <li><i class="fa-solid fa-clock"></i> <span>08:00 - 23:00 WIB</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-line">
+          &copy; <span id="currentYear">2026</span> <strong>FIM HAIKU JASA SETUP SERVER</strong>. All rights reserved.
+        </p>
+        <p class="disclaimer-line">
+          FIM HAIKU tidak berafiliasi resmi dengan Mojang AB atau Microsoft. Minecraft adalah merek dagang Mojang Synergies AB.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL PEMESANAN (ORDER MODAL) ================= -->
+  <div class="modal-backdrop" id="orderModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content-card">
+        <!-- Modal Header -->
+        <div class="modal-header-bar">
+          <div>
+            <span class="modal-badge-tag">ORDER FORM // STEP <span id="currentStepNumber">1</span> OF 2</span>
+            <h3 class="modal-heading-text" id="orderModalTitle">Pemesanan Layanan FIM HAIKU</h3>
+          </div>
+          <button type="button" class="modal-close-button" onclick="closeOrderModal()" aria-label="Tutup Modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Step Indicator -->
+        <div class="order-step-nav">
+          <div class="step-nav-item active" id="stepNode1">
+            <span class="step-badge-num">1</span>
+            <span class="step-label-text">Detail Kebutuhan</span>
+          </div>
+          <div class="step-nav-line" id="stepConnector"></div>
+          <div class="step-nav-item" id="stepNode2">
+            <span class="step-badge-num">2</span>
+            <span class="step-label-text">Konfirmasi Pesanan</span>
+          </div>
+        </div>
+
+        <!-- STEP 1: FORM PEMESANAN -->
+        <div class="modal-body-scroll step-view" id="step1View">
+          <form id="orderForm" onsubmit="handleProceedConfirmation(event)" novalidate>
+            <!-- 1. Data Pembeli -->
+            <div class="form-section-heading">
+              <i class="fa-solid fa-user-circle"></i> Data Pembeli
+            </div>
+            <div class="form-group-item">
+              <label for="buyerName" class="form-label">Nama Pembeli <span class="req">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-user input-icon"></i>
+                <input type="text" id="buyerName" name="buyerName" class="form-control-input" placeholder="Masukkan nama lengkap Anda" required>
+              </div>
+              <span class="form-error-feedback" id="buyerNameError">Nama pembeli wajib diisi</span>
+            </div>
+
+            <!-- 2. Pilihan Layanan & Paket -->
+            <div class="form-section-heading mt-4">
+              <i class="fa-solid fa-cubes"></i> Pilihan Layanan &amp; Paket
+            </div>
+            <div class="form-row-2">
+              <div class="form-group-item">
+                <label for="serviceType" class="form-label">Jenis Jasa yang Dipilih <span class="req">*</span></label>
+                <select id="serviceType" name="serviceType" class="form-control-select" onchange="onServiceTypeChange()" required>
+                  <option value="JASA SETUP SERVER">JASA SETUP SERVER (Rp0 - Rp150.000)</option>
+                  <option value="JASA PROMOSI">JASA PROMOSI (Rp20.000 - Rp40.000)</option>
+                  <option value="JASA CUSTOM PLUGIN">JASA CUSTOM PLUGIN (Rp0 - Rp250.000)</option>
+                </select>
+              </div>
+
+              <div class="form-group-item">
+                <label for="packageType" class="form-label">Paket yang Dipilih <span class="req">*</span></label>
+                <select id="packageType" name="packageType" class="form-control-select" onchange="onPackageTypeChange()" required>
+                  <option value="Tanpa Paket / Custom">Tanpa Paket (Custom Sesuai Kebutuhan)</option>
+                  <optgroup label="DONUT SMP CLONE">
+                    <option value="Donut SMP Basic">Donut SMP Basic (Rp55.000)</option>
+                    <option value="Donut SMP Complete Clone">Donut SMP Complete Clone - BEST SELLER (Rp65.000)</option>
+                  </optgroup>
+                  <optgroup label="SMP ECONOMY">
+                    <option value="SMP Economy Basic">SMP Economy Basic (Rp30.000)</option>
+                    <option value="SMP Economy Complete">SMP Economy Complete - POPULER (Rp40.000)</option>
+                    <option value="SMP Economy Complete++">SMP Economy Complete++ (Rp47.000)</option>
+                  </optgroup>
+                  <optgroup label="LIFESTEAL SMP">
+                    <option value="LifeSteal Basic">LifeSteal Basic (Rp20.000)</option>
+                    <option value="LifeSteal++">LifeSteal++ - BEST SELLER (Rp33.000)</option>
+                  </optgroup>
+                  <optgroup label="HARDCORE SMP">
+                    <option value="HC Basic Setup">HC Basic Setup (Rp18.000)</option>
+                    <option value="HC Complete">HC Complete (Rp25.000)</option>
+                    <option value="HC Complete++">HC Complete++ - RECOMMENDED (Rp35.000)</option>
+                  </optgroup>
+                  <optgroup label="ALTAR SMP">
+                    <option value="Altar SMP S1">Altar SMP S1 (Rp80.000)</option>
+                    <option value="Altar SMP S2">Altar SMP S2 - LEGENDARY (Rp120.000)</option>
+                  </optgroup>
+                  <optgroup label="PAKET SETUP PREMIUM++">
+                    <option value="Custom Server Setup">Custom Server Setup (Rp5.000 - Rp800.000)</option>
+                    <option value="Setup Donut SMP">Setup Donut SMP (Rp145.000)</option>
+                    <option value="Setup Laper Hardcore">Setup Laper Hardcore (Rp190.000)</option>
+                  </optgroup>
+                  <optgroup label="PAKET STARTER">
+                    <option value="PAKET HEMAT">PAKET HEMAT (Rp15.000)</option>
+                    <option value="PAKET SIGMA">PAKET SIGMA - BEST VALUE (Rp25.000)</option>
+                  </optgroup>
+                  <optgroup label="PAKET PLUGIN">
+                    <option value="Donut Shop Clone V1">Donut Shop Clone V1 (Rp26.000)</option>
+                    <option value="Donut Shop Clone V2">Donut Shop Clone V2 (Rp35.000)</option>
+                    <option value="Ultimate Donut SMP Plugin">Ultimate Donut SMP Plugin (Rp45.000)</option>
+                    <option value="Plugin Anti Bot">Plugin Anti Bot (Rp17.000)</option>
+                  </optgroup>
+                  <optgroup label="PAKET PROMOSI VIDEO TIKTOK">
+                    <option value="BASIC PROMOTION TIKTOK">Basic Promotion TikTok (Rp17.000)</option>
+                    <option value="HD++ PROMOTION TIKTOK">HD++ Promotion TikTok - BEST VALUE (Rp25.000)</option>
+                    <option value="ADVANCED PROMOTION TIKTOK">Advanced Promotion TikTok (Rp35.000)</option>
+                  </optgroup>
+                  <optgroup label="JASA PROMOSI PHOTO SLIDE">
+                    <option value="PROMOSI PHOTO SLIDE PAKET 1">Photo Slide Paket 1 (Rp2.000)</option>
+                    <option value="PROMOSI PHOTO SLIDE PAKET 2">Photo Slide Paket 2 (Rp5.000)</option>
+                    <option value="PROMOSI PHOTO SLIDE PAKET 3">Photo Slide Paket 3 (Rp9.000)</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            <!-- 3. Spesifikasi Server -->
+            <div class="form-section-heading mt-4" id="serverSpecsHeading">
+              <i class="fa-solid fa-server"></i> Spesifikasi Server Minecraft
+            </div>
+            <div class="form-group-item" id="serverNameGroup">
+              <label for="serverName" class="form-label">Nama Server Minecraft <span class="req">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-gamepad input-icon"></i>
+                <input type="text" id="serverName" name="serverName" class="form-control-input" placeholder="Contoh: NusantaraSMP / Nebula Survival" required>
+              </div>
+              <span class="form-error-feedback" id="serverNameError">Nama server wajib diisi</span>
+            </div>
+            <div class="form-row-3">
+              <div class="form-group-item">
+                <label for="mcVersion" class="form-label">Versi Minecraft <span class="req">*</span></label>
+                <select id="mcVersion" name="mcVersion" class="form-control-select" required>
+                  <option value="1.21.x (Terbaru)">1.21.x (Terbaru)</option>
+                  <option value="1.20.x">1.20.x</option>
+                  <option value="1.19.x">1.19.x</option>
+                  <option value="1.16.5">1.16.5</option>
+                  <option value="1.12.2">1.12.2</option>
+                  <option value="1.8.8 (PvP Legacy)">1.8.8 (PvP Legacy)</option>
+                  <option value="Bedrock / GeyserMC Crossplay">Bedrock / GeyserMC Crossplay</option>
+                  <option value="Lainnya">Versi Lainnya</option>
+                </select>
+              </div>
+
+              <div class="form-group-item">
+                <label for="serverSoftware" class="form-label">Jenis Server <span class="req">*</span></label>
+                <select id="serverSoftware" name="serverSoftware" class="form-control-select" required>
+                  <option value="Paper">Paper (Rekomendasi Cepat &amp; Stabil)</option>
+                  <option value="Purpur">Purpur (Sangat Optimized &amp; Fitur Lengkap)</option>
+                  <option value="Spigot">Spigot</option>
+                  <option value="Velocity / BungeeCord">Velocity / BungeeCord (Network Proxy)</option>
+                  <option value="Fabric">Fabric</option>
+                  <option value="Forge">Forge</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+              </div>
+
+              <div class="form-group-item">
+                <label for="pluginCount" class="form-label">Jumlah Plugin Diinginkan</label>
+                <select id="pluginCount" name="pluginCount" class="form-control-select">
+                  <option value="1 - 5 Plugin (Sesuai Paket Hemat)">1 - 5 Plugin (Sesuai Paket Hemat)</option>
+                  <option value="6 - 15 Plugin (Sesuai Paket Sigma)">6 - 15 Plugin (Sesuai Paket Sigma)</option>
+                  <option value="16 - 30 Plugin">16 - 30 Plugin</option>
+                  <option value="Lebih dari 30 Plugin">Lebih dari 30 Plugin</option>
+                  <option value="Hanya 1 Plugin Custom">Hanya 1 Plugin Custom</option>
+                  <option value="Belum Yakin / Butuh Saran">Belum Yakin / Butuh Saran</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Dynamic Form Section: CUSTOM PLUGIN -->
+            <div id="dynamicPluginSection" class="dynamic-subform-box" style="display: none;">
+              <div class="dynamic-subform-title">
+                <i class="fa-solid fa-code text-purple"></i> Formulir Tambahan: Jasa Custom Plugin
+              </div>
+              <div class="form-row-2">
+                <div class="form-group-item">
+                  <label for="customPluginName" class="form-label">Nama Plugin</label>
+                  <input type="text" id="customPluginName" name="customPluginName" class="form-control-input" placeholder="Contoh: FimHaikuDailyRewards">
+                </div>
+                <div class="form-group-item">
+                  <label for="customPluginVersion" class="form-label">Target Versi Minecraft</label>
+                  <input type="text" id="customPluginVersion" name="customPluginVersion" class="form-control-input" placeholder="Contoh: Paper 1.20.4 s/d 1.21.x">
+                </div>
+              </div>
+              <div class="form-group-item">
+                <label for="customPluginFeatures" class="form-label">Fitur yang Diinginkan</label>
+                <input type="text" id="customPluginFeatures" name="customPluginFeatures" class="form-control-input" placeholder="Contoh: GUI menu interaktif, integrasi SQLite, token ekonomi khusus">
+              </div>
+              <div class="form-group-item">
+                <label for="customPluginDetail" class="form-label">Penjelasan Detail Plugin</label>
+                <textarea id="customPluginDetail" name="customPluginDetail" class="form-control-textarea" rows="3" placeholder="Tuliskan alur kerja, daftar command, permission, dan aturan logikanya..."></textarea>
+              </div>
+            </div>
+
+            <!-- Dynamic Form Section: PROMOSI -->
+            <div id="dynamicPromoSection" class="dynamic-subform-box" style="display: none;">
+              <div class="dynamic-subform-title">
+                <i class="fa-solid fa-bullhorn text-blue"></i> Formulir Tambahan: Jasa Promosi Server
+              </div>
+              <div class="form-row-2">
+                <div class="form-group-item">
+                  <label for="promoServerName" class="form-label">Nama Server</label>
+                  <input type="text" id="promoServerName" name="promoServerName" class="form-control-input" placeholder="Contoh: Nusantara Craft SMP">
+                </div>
+                <div class="form-group-item">
+                  <label for="promoDiscordLink" class="form-label">Link Discord Server</label>
+                  <input type="text" id="promoDiscordLink" name="promoDiscordLink" class="form-control-input" placeholder="Contoh: discord.gg/namaservermu">
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group-item">
+                  <label for="promoServerIp" class="form-label">IP Server</label>
+                  <input type="text" id="promoServerIp" name="promoServerIp" class="form-control-input" placeholder="Contoh: play.namaserver.id">
+                </div>
+                <div class="form-group-item">
+                  <label for="promoServerPort" class="form-label">Port Server</label>
+                  <input type="text" id="promoServerPort" name="promoServerPort" class="form-control-input" placeholder="Default Java: 25565 / Bedrock: 19132">
+                </div>
+              </div>
+              <div class="form-group-item">
+                <label for="promoServerDesc" class="form-label">Deskripsi Server</label>
+                <textarea id="promoServerDesc" name="promoServerDesc" class="form-control-textarea" rows="2" placeholder="Tuliskan tema server (Survival SMP dengan claim wilayah, sistem ekonomi, dungeon, dsb)..."></textarea>
+              </div>
+            </div>
+
+            <!-- 4. Deskripsi Permintaan & Catatan -->
+            <div class="form-section-heading mt-4">
+              <i class="fa-solid fa-pencil"></i> Deskripsi &amp; Catatan
+            </div>
+            <div class="form-group-item">
+              <label for="requestDescription" class="form-label">Deskripsi Permintaan <span class="req">*</span></label>
+              <textarea id="requestDescription" name="requestDescription" class="form-control-textarea" rows="3" placeholder="Tuliskan gambaran umum kebutuhan servermu sedetail mungkin..." required></textarea>
+              <span class="form-error-feedback" id="requestDescriptionError">Deskripsi permintaan wajib diisi agar kami dapat menganalisis kebutuhanmu</span>
+            </div>
+
+            <div class="form-group-item">
+              <label for="additionalNotes" class="form-label">Catatan Tambahan (Opsional)</label>
+              <textarea id="additionalNotes" name="additionalNotes" class="form-control-textarea" rows="2" placeholder="Informasi tambahan lain, target waktu rilis, link dokumen, dsb..."></textarea>
+            </div>
+
+            <!-- Price Preview Box -->
+            <div class="price-preview-container">
+              <div class="price-preview-header">
+                <span><i class="fa-solid fa-calculator"></i> Estimasi Total Biaya</span>
+                <span class="price-status-badge">Kalkulasi Otomatis</span>
+              </div>
+              <div class="price-preview-body">
+                <div class="price-preview-item">
+                  <span id="calcItemLabel">Pilihan: Setup Server (Custom)</span>
+                  <span id="calcItemPrice">Rp0 - Rp150.000</span>
+                </div>
+                <div class="price-preview-divider"></div>
+                <div class="price-preview-total">
+                  <span class="total-label">Total Harga:</span>
+                  <span class="total-number text-purple-light" id="calcTotalDisplay">Rp15.000</span>
+                </div>
+                <p class="price-preview-note" id="calcNote">Harga paket bundling resmi mengikat sesuai ketentuan.</p>
+              </div>
+            </div>
+
+            <!-- Footer Buttons -->
+            <div class="modal-footer-flex">
+              <button type="button" class="btn btn-secondary" onclick="closeOrderModal()">Batal</button>
+              <button type="submit" class="btn btn-primary">
+                <span>Lanjut ke Konfirmasi</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- STEP 2: HALAMAN KONFIRMASI PESANAN -->
+        <div class="modal-body-scroll step-view" id="step2View" style="display: none;">
+          <div class="confirmation-wrapper">
+            <div class="confirmation-notice">
+              <i class="fa-solid fa-circle-check notice-icon"></i>
+              <div>
+                <strong>Periksa Kembali Rincian Pesanan Anda</strong>
+                <p>Pastikan rincian pesanan dan konfigurasi server Anda sudah sesuai sebelum mengirimkannya ke tim FIM HAIKU.</p>
+              </div>
+            </div>
+
+            <!-- Summary Receipt Box -->
+            <div class="receipt-summary-box">
+              <div class="receipt-segment">
+                <span class="segment-heading"><i class="fa-solid fa-user"></i> Data Pemesan</span>
+                <div class="segment-grid">
+                  <div class="segment-cell">
+                    <span class="cell-tag">Nama:</span>
+                    <strong class="cell-text" id="sumBuyerName">-</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="receipt-divider-line"></div>
+
+              <div class="receipt-segment">
+                <span class="segment-heading"><i class="fa-solid fa-server"></i> Spesifikasi Layanan &amp; Server</span>
+                <div class="segment-grid">
+                  <div class="segment-cell">
+                    <span class="cell-tag">Jasa Dipilih:</span>
+                    <strong class="cell-text" id="sumServiceType">-</strong>
+                  </div>
+                  <div class="segment-cell">
+                    <span class="cell-tag">Paket:</span>
+                    <strong class="cell-text text-purple-light" id="sumPackageType">-</strong>
+                  </div>
+                  <div class="segment-cell" id="sumServerNameRow">
+                    <span class="cell-tag">Nama Server:</span>
+                    <strong class="cell-text text-purple-light" id="sumServerName">-</strong>
+                  </div>
+                  <div class="segment-cell">
+                    <span class="cell-tag">Versi MC:</span>
+                    <strong class="cell-text" id="sumMcVersion">-</strong>
+                  </div>
+                  <div class="segment-cell">
+                    <span class="cell-tag">Engine:</span>
+                    <strong class="cell-text" id="sumServerSoftware">-</strong>
+                  </div>
+                  <div class="segment-cell">
+                    <span class="cell-tag">Plugin:</span>
+                    <strong class="cell-text" id="sumPluginCount">-</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Extra Dynamic Specs -->
+              <div id="sumExtraSection" style="display: none;">
+                <div class="receipt-divider-line"></div>
+                <div class="receipt-segment">
+                  <span class="segment-heading" id="sumExtraTitle"><i class="fa-solid fa-asterisk"></i> Informasi Tambahan</span>
+                  <div id="sumExtraContent" class="extra-content-box"></div>
+                </div>
+              </div>
+
+              <div class="receipt-divider-line"></div>
+
+              <div class="receipt-segment">
+                <span class="segment-heading"><i class="fa-solid fa-comment-dots"></i> Deskripsi Permintaan</span>
+                <p class="receipt-desc-text" id="sumRequestDesc">-</p>
+                <div id="sumNotesWrap" style="display: none; margin-top: 10px;">
+                  <span class="cell-tag">Catatan Tambahan:</span>
+                  <p class="receipt-desc-text mt-1" id="sumAdditionalNotes">-</p>
+                </div>
+              </div>
+
+              <div class="receipt-divider-line"></div>
+
+              <!-- Total Card in Summary -->
+              <div class="receipt-total-banner">
+                <div>
+                  <span class="banner-label">TOTAL ESTIMASI BIAYA:</span>
+                  <strong class="banner-amount text-purple-light" id="sumTotalPrice">Rp15.000</strong>
+                </div>
+                <span class="banner-guarantee"><i class="fa-solid fa-shield-halved"></i> Garansi Pengerjaan FIM HAIKU</span>
+              </div>
+            </div>
+
+            <!-- Confirmation Action Buttons -->
+            <div class="confirmation-actions-row">
+              <button type="button" class="btn btn-secondary" onclick="goToStep(1)">
+                <i class="fa-solid fa-pen-to-square"></i> Edit Kembali
+              </button>
+              
+              <div class="confirmation-submit-group">
+                <!-- Submit to WhatsApp -->
+                <button type="button" class="btn btn-whatsapp-action" onclick="submitOrderToWhatsApp()">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>Kirim Pesanan via WhatsApp</span>
+                </button>
+
+                <!-- Copy for Discord Ticket -->
+                <button type="button" class="btn btn-discord-action" onclick="copyOrderForDiscordTicket()">
+                  <i class="fa-brands fa-discord"></i>
+                  <span>Salin Format Tiket Discord</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= DETAIL JASA MODAL ================= -->
+  <div class="modal-backdrop" id="detailModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content-card">
+        <div class="modal-header-bar">
+          <div>
+            <span class="modal-badge-tag" id="detailModalBadge">DETAIL LAYANAN</span>
+            <h3 class="modal-heading-text" id="detailModalTitle">Detail Layanan FIM HAIKU</h3>
+          </div>
+          <button type="button" class="modal-close-button" onclick="closeDetailModal()" aria-label="Tutup Modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body-scroll" id="detailModalBody">
+          <!-- Dynamic Content Injected via JS -->
+        </div>
+        <div class="modal-footer-flex">
+          <button type="button" class="btn btn-secondary" onclick="closeDetailModal()">Tutup</button>
+          <button type="button" class="btn btn-primary" id="detailModalOrderBtn" onclick="orderFromDetail()">
+            <i class="fa-solid fa-cart-shopping"></i> Pesan Jasa Ini Sekarang
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING BOTTOM STORE DOCK ================= -->
+  <aside class="floating-bottom-dock" id="floatingDock" aria-label="Navigasi Bawah Toko">
+    <!-- Left: Ambient Music Player Pill -->
+    <div class="dock-music-widget">
+      <button type="button" class="btn-dock-music" id="dockMusicBtn" aria-label="Putar Musik Ambient Minecraft" onclick="toggleAmbientMusic()">
+        <span class="music-disc-icon" id="musicDiscIcon"><i class="fa-solid fa-compact-disc"></i></span>
+        <span class="music-info-text">
+          <span class="music-kicker">FIM HAIKU MUSIC</span>
+          <span class="music-track-name" id="musicTrackName">FIM HAIKU - Afterglow</span>
+        </span>
+        <span class="music-play-state" id="musicPlayState"><i class="fa-solid fa-play"></i></span>
+      </button>
+    </div>
+
+    <!-- Center: Dock Navigation Tabs -->
+    <nav class="dock-nav-tabs">
+      <button type="button" class="dock-tab active" id="dockTabPaket" onclick="switchMainTab('paket')">
+        <i class="fa-solid fa-box-open"></i>
+        <span>Paket</span>
+      </button>
+      <button type="button" class="dock-tab" id="dockTabSetup" onclick="switchMainTab('setup')">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <span>Setup</span>
+      </button>
+      <button type="button" class="dock-tab" id="dockTabPromo" onclick="switchMainTab('promotion')">
+        <i class="fa-solid fa-film"></i>
+        <span>Promotion</span>
+      </button>
+      <button type="button" class="dock-tab" id="dockTabContact" onclick="switchMainTab('kontak')">
+        <i class="fa-solid fa-headset"></i>
+        <span>Kontak</span>
+      </button>
+    </nav>
+
+    <!-- Right: Verified Badge -->
+    <div class="dock-brand-badge">
+      <span class="badge-dot"></span>
+      <span>FIM HAIKU OFFICIAL</span>
+    </div>
+  </aside>
+
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Client Script -->
+  <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="altarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190A2E" />
+      <stop offset="50%" stop-color="#100520" />
+      <stop offset="100%" stop-color="#05010B" />
+    </linearGradient>
+    <radialGradient id="altarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.65" />
+      <stop offset="50%" stop-color="#6366F1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="mysticTitle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#E9D5FF" />
+      <stop offset="70%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#altarBg)" />
+  <circle cx="400" cy="200" r="260" fill="url(#altarGlow)" />
+
+  <g opacity="0.12">
+    <path d="M0 60 H800 M0 120 H800 M0 180 H800 M0 240 H800 M0 300 H800 M0 360 H800 M0 420 H800" stroke="#C084FC" stroke-width="1" stroke-dasharray="4 8" />
+    <path d="M100 0 V450 M200 0 V450 M300 0 V450 M400 0 V450 M500 0 V450 M600 0 V450 M700 0 V450" stroke="#C084FC" stroke-width="1" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Legendary Glowing Sword & Altar Pillar -->
+  <g transform="translate(400, 190)">
+    <!-- Altar Stone Platform -->
+    <polygon points="0,50 160,0 0,-50 -160,0" fill="#1E1B4B" stroke="#6366F1" stroke-width="2" />
+    <!-- Floating Vertical Sword -->
+    <rect x="-6" y="-120" width="12" height="110" rx="3" fill="#E0E7FF" stroke="#38BDF8" stroke-width="2" />
+    <polygon points="0,-140 -12,-115 12,-115" fill="#38BDF8" />
+    <rect x="-30" y="-10" width="60" height="10" rx="3" fill="#A855F7" />
+    <circle cx="0" cy="-5" r="8" fill="#F43F5E" />
+    <rect x="-4" y="0" width="8" height="24" rx="2" fill="#7E22CE" />
+    <!-- Orbiting Magic Runes -->
+    <rect x="-90" y="-70" width="14" height="14" transform="rotate(25 -90 -70)" fill="#C084FC" opacity="0.8" />
+    <rect x="80" y="-80" width="16" height="16" transform="rotate(45 80 -80)" fill="#38BDF8" opacity="0.85" />
+    <rect x="-70" y="20" width="12" height="12" transform="rotate(15 -70 20)" fill="#F43F5E" opacity="0.75" />
+    <rect x="75" y="30" width="14" height="14" transform="rotate(35 75 30)" fill="#A855F7" opacity="0.8" />
+  </g>
+
+  <!-- Title Badge -->
+  <g transform="translate(400, 360)">
+    <rect x="-190" y="-36" width="380" height="72" rx="14" fill="#0E051C" stroke="#A855F7" stroke-width="2.5" />
+    <text x="0" y="8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" fill="url(#mysticTitle)" text-anchor="middle" letter-spacing="3">ALTAR SMP</text>
+    <text x="0" y="26" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="11" fill="#C084FC" text-anchor="middle" letter-spacing="2">LEGENDARY WEAPONS &amp; ABILITIES</text>
+  </g>
+</svg>
+

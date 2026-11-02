@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Soft Lighting Radiance -->
+    <radialGradient id="skyAura" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#5865F2" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#101116" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="portalGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#4C1D95" stop-opacity="0.2" />
+    </radialGradient>
+
+    <!-- Block Gradients -->
+    <linearGradient id="grassTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+    <linearGradient id="dirtSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350F" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+    <linearGradient id="stoneTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="stoneSide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="purpleRoof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#6D28D9" />
+    </linearGradient>
+    <linearGradient id="blueRoof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Sky Atmosphere -->
+  <circle cx="300" cy="240" r="230" fill="url(#skyAura)" />
+
+  <!-- Floating Island Base (Minecraft Blocky Geometry) -->
+  <g transform="translate(300, 310)">
+    <!-- Deep Island Under-rock -->
+    <polygon points="0,90 120,35 0,-15 -120,35" fill="#14151D" stroke="#2B2D3D" stroke-width="1.5" />
+    <polygon points="-120,35 0,90 0,135 -120,75" fill="#0C0D12" />
+    <polygon points="0,90 120,35 120,75 0,135" fill="#181923" />
+    <!-- Dangling stalactite blocks -->
+    <polygon points="-30,110 0,140 0,175 -30,135" fill="#0E1017" />
+    <polygon points="0,140 30,110 30,135 0,175" fill="#141722" />
+
+    <!-- Main Island Surface (Stone & Grass Tier) -->
+    <g transform="translate(0, -35)">
+      <!-- Top Island Plateau -->
+      <polygon points="0,-85 180,-5 0,80 -180,-5" fill="url(#stoneTop)" stroke="#475569" stroke-width="1.5" />
+      <!-- Left Rim -->
+      <polygon points="-180,-5 0,80 0,105 -180,20" fill="url(#stoneSide)" />
+      <!-- Right Rim -->
+      <polygon points="0,80 180,-5 180,20 0,105" fill="#111827" />
+
+      <!-- Grass Layers on Top Plateau -->
+      <polygon points="-20,-75 140,-5 0,65 -150,5" fill="url(#grassTop)" stroke="#16A34A" stroke-width="1.5" />
+      <polygon points="-150,5 0,65 0,78 -150,18" fill="url(#dirtSide)" />
+      <polygon points="0,65 140,-5 140,8 0,78" fill="#361706" />
+
+      <!-- Cobblestone Spawn Pathway -->
+      <polygon points="-10,-60 20,-45 -40,30 -70,15" fill="#64748B" opacity="0.8" />
+      <polygon points="20,-45 50,-30 -10,45 -40,30" fill="#94A3B8" opacity="0.9" />
+    </g>
+  </g>
+
+  <!-- Spawn Castle & Fantasy Buildings (Center) -->
+  <g transform="translate(300, 190)">
+    <!-- Central Nether/Aether Glowing Portal Arch -->
+    <g transform="translate(0, -20)">
+      <!-- Portal Frame (Obsidian Pillars) -->
+      <rect x="-35" y="-60" width="70" height="85" rx="4" fill="#1E1B4B" stroke="#4338CA" stroke-width="2" />
+      <!-- Portal Interior Glow -->
+      <rect x="-24" y="-50" width="48" height="70" rx="3" fill="url(#portalGlow)" filter="url(#softGlow)" />
+      <!-- Portal Energy Core Swirls -->
+      <ellipse cx="0" cy="-15" rx="14" ry="24" fill="#DDD6FE" opacity="0.7" />
+    </g>
+
+    <!-- Castle Main Keep (Behind Portal) -->
+    <g transform="translate(0, -95)">
+      <!-- Main Wall -->
+      <polygon points="-50,-30 50,-30 50,45 -50,45" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <!-- Center Tower Roof (Fantasy Purple Spire) -->
+      <polygon points="0,-85 30,-30 -30,-30" fill="url(#purpleRoof)" stroke="#C084FC" stroke-width="1.5" />
+      <!-- Golden Crest on Spire -->
+      <polygon points="0,-92 5,-85 -5,-85" fill="#FBBF24" />
+      <!-- Castle Battlements / Crenellations -->
+      <rect x="-48" y="-36" width="16" height="8" fill="#334155" />
+      <rect x="-16" y="-36" width="16" height="8" fill="#334155" />
+      <rect x="16" y="-36" width="16" height="8" fill="#334155" />
+      <rect x="34" y="-36" width="14" height="8" fill="#334155" />
+    </g>
+
+    <!-- Left Watchtower -->
+    <g transform="translate(-75, -55)">
+      <polygon points="-22,-15 22,-15 22,65 -22,65" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <!-- Blue Spire Roof -->
+      <polygon points="0,-60 22,-15 -22,-15" fill="url(#blueRoof)" stroke="#60A5FA" stroke-width="1.5" />
+      <!-- Glowing Arrow Window -->
+      <rect x="-4" y="10" width="8" height="16" rx="2" fill="#FDE047" opacity="0.8" />
+    </g>
+
+    <!-- Right Watchtower -->
+    <g transform="translate(75, -55)">
+      <polygon points="-22,-15 22,-15 22,65 -22,65" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <!-- Purple Spire Roof -->
+      <polygon points="0,-60 22,-15 -22,-15" fill="url(#purpleRoof)" stroke="#C084FC" stroke-width="1.5" />
+      <!-- Glowing Arrow Window -->
+      <rect x="-4" y="10" width="8" height="16" rx="2" fill="#FDE047" opacity="0.8" />
+    </g>
+
+    <!-- Spawn Beacon Light Beam (Projected into the Sky) -->
+    <path d="M-8 40 L-18 -180 L18 -180 L8 40 Z" fill="url(#skyAura)" opacity="0.6" />
+    <line x1="0" y1="40" x2="0" y2="-180" stroke="#C084FC" stroke-width="2" opacity="0.8" />
+
+    <!-- Street Lanterns on Spawn Path -->
+    <g transform="translate(-45, 55)">
+      <line x1="0" y1="0" x2="0" y2="18" stroke="#1E293B" stroke-width="3" />
+      <rect x="-5" y="-8" width="10" height="10" rx="2" fill="#FBBF24" stroke="#D97706" stroke-width="1" />
+    </g>
+    <g transform="translate(45, 45)">
+      <line x1="0" y1="0" x2="0" y2="18" stroke="#1E293B" stroke-width="3" />
+      <rect x="-5" y="-8" width="10" height="10" rx="2" fill="#FBBF24" stroke="#D97706" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- Floating Ambient Minecraft Blocks -->
+  <g transform="translate(110, 160)">
+    <!-- Floating Emerald / Enchanted Ore Block -->
+    <polygon points="0,-16 16,-7 0,2 -16,-7" fill="#8B5CF6" stroke="#C084FC" stroke-width="1" />
+    <polygon points="-16,-7 0,2 0,20 -16,11" fill="#6D28D9" />
+    <polygon points="0,2 16,-7 16,11 0,20" fill="#4C1D95" />
+  </g>
+  <g transform="translate(470, 260)">
+    <!-- Floating Lapis / Diamond Ore Block -->
+    <polygon points="0,-14 14,-6 0,2 -14,-6" fill="#38BDF8" stroke="#7DD3FC" stroke-width="1" />
+    <polygon points="-14,-6 0,2 0,18 -14,10" fill="#0284C7" />
+    <polygon points="0,2 14,-6 14,10 0,18" fill="#0369A1" />
+  </g>
+
+  <!-- Floating UI Element 1: Top Left Pill (Java & Bedrock Ready) -->
+  <g transform="translate(40, 95)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="180" height="52" rx="12" fill="#181923" stroke="#2B2D3D" stroke-width="1.5" />
+    <!-- Icon Circle -->
+    <rect x="12" y="12" width="28" height="28" rx="8" fill="#8B5CF6" fill-opacity="0.18" />
+    <path d="M22 26 L25 29 L31 22" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="48" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#F5F5F7">Crossplay Server</text>
+    <text x="48" y="39" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9.5" fill="#A1A1AA">Java &amp; Bedrock Geyser</text>
+  </g>
+
+  <!-- Floating UI Element 2: Right Top Pill (Anti-Lag Optimization) -->
+  <g transform="translate(370, 80)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="185" height="52" rx="12" fill="#181923" stroke="#2B2D3D" stroke-width="1.5" />
+    <rect x="12" y="12" width="28" height="28" rx="8" fill="#5865F2" fill-opacity="0.18" />
+    <path d="M26 18 L21 27 L26 27 L25 34 L31 24 L26 24 Z" fill="#818CF8" />
+    <text x="48" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#F5F5F7">High Performance</text>
+    <text x="48" y="39" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9.5" fill="#A1A1AA">Purpur &amp; Paper Engine</text>
+  </g>
+
+  <!-- Floating UI Element 3: Bottom Right Pill (Custom Plugin) -->
+  <g transform="translate(360, 360)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="190" height="52" rx="12" fill="#181923" stroke="#2B2D3D" stroke-width="1.5" />
+    <rect x="12" y="12" width="28" height="28" rx="8" fill="#A855F7" fill-opacity="0.18" />
+    <!-- Puzzle / Gear Icon -->
+    <path d="M22 22 H26 V26 H22 Z M28 22 H32 V26 H28 Z M25 28 H29 V32 H25 Z" fill="#C084FC" />
+    <text x="48" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#F5F5F7">Custom Development</text>
+    <text x="48" y="39" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="9.5" fill="#A1A1AA">Mekanisme &amp; Fitur Unik</text>
+  </g>
+
+  <!-- Magical Sparkle Particles -->
+  <circle cx="160" cy="220" r="2.5" fill="#C084FC" opacity="0.8" />
+  <circle cx="210" cy="140" r="2" fill="#818CF8" opacity="0.7" />
+  <circle cx="390" cy="180" r="3" fill="#DDD6FE" opacity="0.9" />
+  <circle cx="430" cy="130" r="2" fill="#C084FC" opacity="0.7" />
+  <circle cx="280" cy="80" r="2.5" fill="#60A5FA" opacity="0.8" />
+</svg>

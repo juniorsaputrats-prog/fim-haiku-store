@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="heroEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FF87" />
+      <stop offset="100%" stop-color="#60EFFF" />
+    </linearGradient>
+    <linearGradient id="heroPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+    <linearGradient id="serverPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064E3B" />
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065F46" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+    <radialGradient id="haloGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Filters -->
+    <filter id="glowHeavy" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur1" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Glow -->
+  <circle cx="300" cy="250" r="220" fill="url(#haloGlow)" />
+
+  <!-- Isometric Cyber Grid Platform -->
+  <g opacity="0.65" transform="translate(300, 360)">
+    <!-- Base Platform Ellipse / Polygon -->
+    <polygon points="0,-70 200,30 0,130 -200,30" fill="#0B132B" stroke="#00FF87" stroke-width="1.5" stroke-opacity="0.5" />
+    <polygon points="0,-50 160,30 0,110 -160,30" fill="none" stroke="#60EFFF" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="6,4" />
+    
+    <!-- Cyber Grid Lines -->
+    <line x1="-120" y1="0" x2="80" y2="100" stroke="#00FF87" stroke-width="0.8" stroke-opacity="0.3" />
+    <line x1="-40" y1="-30" x2="160" y2="70" stroke="#00FF87" stroke-width="0.8" stroke-opacity="0.3" />
+    <line x1="120" y1="0" x2="-80" y2="100" stroke="#60EFFF" stroke-width="0.8" stroke-opacity="0.3" />
+    <line x1="40" y1="-30" x2="-160" y2="70" stroke="#60EFFF" stroke-width="0.8" stroke-opacity="0.3" />
+  </g>
+
+  <!-- Central Main Minecraft Server Isometric Rack -->
+  <g transform="translate(300, 220)">
+    <!-- Server Shadow -->
+    <polygon points="0,110 90,65 0,20 -90,65" fill="#020617" opacity="0.7" />
+
+    <!-- Isometric Server Unit 1 (Bottom Rack) -->
+    <g transform="translate(0, 40)">
+      <!-- Top -->
+      <polygon points="0,-40 80,0 0,40 -80,0" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <!-- Left -->
+      <polygon points="-80,0 0,40 0,75 -80,35" fill="#0F172A" stroke="#334155" stroke-width="1.5" />
+      <!-- Right -->
+      <polygon points="0,40 80,0 80,35 0,75" fill="#182234" stroke="#334155" stroke-width="1.5" />
+      
+      <!-- Server LED slots left -->
+      <line x1="-65" y1="18" x2="-15" y2="43" stroke="#00FF87" stroke-width="2.5" filter="url(#glowHeavy)" />
+      <line x1="-65" y1="26" x2="-35" y2="41" stroke="#60EFFF" stroke-width="2" />
+      <!-- Server LED slots right -->
+      <circle cx="20" cy="52" r="3" fill="#00FF87" filter="url(#glowHeavy)" />
+      <circle cx="35" cy="44" r="3" fill="#00FF87" />
+      <circle cx="50" cy="36" r="3" fill="#A855F7" />
+    </g>
+
+    <!-- Isometric Server Unit 2 (Middle Rack) -->
+    <g transform="translate(0, -10)">
+      <!-- Top -->
+      <polygon points="0,-40 80,0 0,40 -80,0" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <!-- Left -->
+      <polygon points="-80,0 0,40 0,40 -80,0" fill="#0B132B" stroke="#334155" stroke-width="1.5" />
+      <!-- Right -->
+      <polygon points="0,40 80,0 80,35 0,75" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      
+      <!-- Minecraft Redstone/Emerald Core Grid -->
+      <line x1="-60" y1="12" x2="-20" y2="32" stroke="#A855F7" stroke-width="2.5" filter="url(#glowHeavy)" />
+      <circle cx="30" cy="40" r="3" fill="#00FF87" />
+      <circle cx="45" cy="32" r="3" fill="#60EFFF" />
+      <circle cx="60" cy="24" r="3" fill="#00FF87" />
+    </g>
+
+    <!-- Glowing Minecraft Emerald / Core Cube Floating on Top -->
+    <g transform="translate(0, -90)">
+      <!-- Pulsing Aura -->
+      <polygon points="0,-50 65,-12 0,26 -65,-12" fill="#00FF87" opacity="0.2" filter="url(#glowHeavy)" />
+      
+      <!-- Top Face -->
+      <polygon points="0,-50 50,-25 0,0 -50,-25" fill="url(#cubeTop)" stroke="#34D399" stroke-width="2" />
+      <!-- Left Face -->
+      <polygon points="-50,-25 0,0 0,50 -50,25" fill="url(#cubeLeft)" stroke="#10B981" stroke-width="2" />
+      <!-- Right Face -->
+      <polygon points="0,0 50,-25 50,25 0,50" fill="url(#cubeRight)" stroke="#059669" stroke-width="2" />
+      
+      <!-- Pixel Pattern on Cube Top -->
+      <polygon points="-20,-28 0,-18 20,-28 0,-38" fill="#34D399" opacity="0.7" />
+      <!-- Core glowing glyph -->
+      <circle cx="0" cy="0" r="6" fill="#FFFFFF" filter="url(#glowHeavy)" />
+    </g>
+  </g>
+
+  <!-- Floating Badge 1: Java & Bedrock Ready (Left) -->
+  <g transform="translate(60, 140)">
+    <rect x="0" y="0" width="165" height="52" rx="12" fill="#0F172A" stroke="#00FF87" stroke-width="1.5" fill-opacity="0.85" />
+    <circle cx="28" cy="26" r="14" fill="#10B981" fill-opacity="0.2" />
+    <!-- Checkmark Icon -->
+    <path d="M22 26 L26 30 L34 22" stroke="#00FF87" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="50" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">Java &amp; Bedrock</text>
+    <text x="50" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="10" fill="#00FF87">Dual-Crossplay Ready</text>
+  </g>
+
+  <!-- Floating Badge 2: Anti-Lag & Purpur Optimized (Right) -->
+  <g transform="translate(385, 120)">
+    <rect x="0" y="0" width="165" height="52" rx="12" fill="#0F172A" stroke="#A855F7" stroke-width="1.5" fill-opacity="0.85" />
+    <circle cx="28" cy="26" r="14" fill="#A855F7" fill-opacity="0.2" />
+    <!-- Lightning Bolt -->
+    <path d="M28 17 L22 28 L28 28 L27 35 L34 25 L28 25 Z" fill="#C084FC" />
+    <text x="50" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">Anti-Lag 20 TPS</text>
+    <text x="50" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="10" fill="#A855F7">Purpur / Paper Config</text>
+  </g>
+
+  <!-- Floating Badge 3: 100% Custom Plugin Support (Bottom Right) -->
+  <g transform="translate(395, 310)">
+    <rect x="0" y="0" width="160" height="50" rx="12" fill="#0F172A" stroke="#60EFFF" stroke-width="1.5" fill-opacity="0.85" />
+    <circle cx="26" cy="25" r="13" fill="#60EFFF" fill-opacity="0.2" />
+    <!-- Gear / Code Icon -->
+    <path d="M22 21 L18 25 L22 29 M30 21 L34 25 L30 29" stroke="#60EFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="48" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">Custom Plugin</text>
+    <text x="48" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="10" fill="#60EFFF">Request Sesuai Ide</text>
+  </g>
+
+  <!-- Floating Glowing Particles / Sparks -->
+  <circle cx="150" cy="260" r="3" fill="#00FF87" filter="url(#glowHeavy)" />
+  <circle cx="180" cy="110" r="2.5" fill="#60EFFF" />
+  <circle cx="430" cy="220" r="3" fill="#A855F7" filter="url(#glowHeavy)" />
+  <circle cx="260" cy="110" r="2" fill="#00FF87" />
+  <circle cx="350" cy="90" r="3.5" fill="#00FF87" filter="url(#glowHeavy)" />
+  <circle cx="470" cy="270" r="2" fill="#60EFFF" />
+  <circle cx="120" cy="360" r="2.5" fill="#A855F7" />
+</svg>

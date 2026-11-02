@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="setupBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1035" />
+      <stop offset="50%" stop-color="#140B26" />
+      <stop offset="100%" stop-color="#090514" />
+    </linearGradient>
+    <radialGradient id="portalAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.6" />
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="30%" stop-color="#FDE047" />
+      <stop offset="70%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+    <linearGradient id="cyanText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDFA" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="purpleText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5FF" />
+      <stop offset="50%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+  </defs>
+
+  <!-- Banner Background -->
+  <rect width="800" height="450" fill="url(#setupBg)" />
+  
+  <!-- Subtle Minecraft Pixel Grid Backdrop -->
+  <g opacity="0.15">
+    <path d="M0 50 H800 M0 100 H800 M0 150 H800 M0 200 H800 M0 250 H800 M0 300 H800 M0 350 H800 M0 400 H800" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4 8" />
+    <path d="M100 0 V450 M200 0 V450 M300 0 V450 M400 0 V450 M500 0 V450 M600 0 V450 M700 0 V450" stroke="#8B5CF6" stroke-width="1" stroke-dasharray="4 8" />
+  </g>
+
+  <!-- Ambient Glow Behind Elements -->
+  <circle cx="400" cy="200" r="280" fill="url(#portalAura)" />
+
+  <!-- Isometric Minecraft Terrain Platform & Spawn Hub -->
+  <g transform="translate(400, 310)">
+    <!-- Base Platform Blocks (Dark Obsidian / Slate) -->
+    <polygon points="0,90 260,0 0,-90 -260,0" fill="#181926" stroke="#4C1D95" stroke-width="2" />
+    <polygon points="-260,0 0,90 0,140 -260,50" fill="#0D0E15" />
+    <polygon points="0,90 260,0 260,50 0,140" fill="#11121C" />
+
+    <!-- Stone Brick & Grass Tiles on Platform -->
+    <polygon points="-40,-75 220,10 0,80 -220,0" fill="#2E1065" stroke="#7C3AED" stroke-width="1.5" />
+    <polygon points="-120,-30 0,10 0,55 -120,15" fill="#1E1B4B" />
+    <polygon points="0,10 120,-30 120,15 0,55" fill="#312E81" />
+
+    <!-- Center Nether/Aether Glowing Portal Structure -->
+    <g transform="translate(0, -90)">
+      <!-- Obsidian Frame -->
+      <rect x="-65" y="-95" width="130" height="135" rx="8" fill="#0F051D" stroke="#7C3AED" stroke-width="3" />
+      <!-- Swirling Purple Gateway Core -->
+      <rect x="-48" y="-80" width="96" height="110" rx="6" fill="#8B5CF6" />
+      <ellipse cx="0" cy="-25" rx="36" ry="46" fill="#D8B4FE" opacity="0.85" />
+      <ellipse cx="0" cy="-25" rx="20" ry="28" fill="#FFFFFF" opacity="0.9" />
+    </g>
+
+    <!-- Spawn Castle Towers on Left and Right -->
+    <g transform="translate(-150, -60)">
+      <rect x="-25" y="-70" width="50" height="90" rx="4" fill="#1E1B4B" stroke="#4C1D95" stroke-width="2" />
+      <polygon points="0,-115 30,-70 -30,-70" fill="#9333EA" stroke="#C084FC" stroke-width="2" />
+      <rect x="-6" y="-35" width="12" height="22" rx="3" fill="#FDE047" />
+    </g>
+    <g transform="translate(150, -60)">
+      <rect x="-25" y="-70" width="50" height="90" rx="4" fill="#1E1B4B" stroke="#4C1D95" stroke-width="2" />
+      <polygon points="0,-115 30,-70 -30,-70" fill="#9333EA" stroke="#C084FC" stroke-width="2" />
+      <rect x="-6" y="-35" width="12" height="22" rx="3" fill="#FDE047" />
+    </g>
+
+    <!-- Floating Emerald & Redstone Core Cubes -->
+    <g transform="translate(-80, 20)">
+      <polygon points="0,-16 16,-7 0,2 -16,-7" fill="#10B981" stroke="#34D399" stroke-width="1.5" />
+      <polygon points="-16,-7 0,2 0,20 -16,11" fill="#059669" />
+      <polygon points="0,2 16,-7 16,11 0,20" fill="#047857" />
+    </g>
+    <g transform="translate(80, 20)">
+      <polygon points="0,-16 16,-7 0,2 -16,-7" fill="#EF4444" stroke="#F87171" stroke-width="1.5" />
+      <polygon points="-16,-7 0,2 0,20 -16,11" fill="#DC2626" />
+      <polygon points="0,2 16,-7 16,11 0,20" fill="#991B1B" />
+    </g>
+  </g>
+
+  <!-- Big 3D Minecraft Style Typography Title -->
+  <g transform="translate(400, 75)" text-anchor="middle">
+    <!-- Drop Shadow Text -->
+    <text x="0" y="5" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="900" font-size="44" letter-spacing="3" fill="#000000" opacity="0.8">
+      JASA SETUP SERVER
+    </text>
+    <!-- Main 3D Text -->
+    <text x="0" y="0" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="900" font-size="44" letter-spacing="3" fill="url(#purpleText)" stroke="#3B0764" stroke-width="3">
+      JASA SETUP SERVER
+    </text>
+
+    <!-- Subtitle Banner Tag -->
+    <rect x="-190" y="18" width="380" height="30" rx="15" fill="#1E1B4B" stroke="#7C3AED" stroke-width="1.5" />
+    <text x="0" y="38" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="700" font-size="13" letter-spacing="2" fill="#E9D5FF">
+      CONFIGURATION &amp; OPTIMIZATION
+    </text>
+  </g>
+
+  <!-- Floating Feature Badges (Bottom Left & Right) -->
+  <g transform="translate(40, 390)">
+    <rect width="190" height="36" rx="8" fill="#181926" stroke="#4C1D95" stroke-width="1.5" />
+    <circle cx="18" cy="18" r="5" fill="#10B981" />
+    <text x="32" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">Java &amp; Bedrock Crossplay</text>
+  </g>
+
+  <g transform="translate(570, 390)">
+    <rect width="190" height="36" rx="8" fill="#181926" stroke="#4C1D95" stroke-width="1.5" />
+    <circle cx="18" cy="18" r="5" fill="#8B5CF6" />
+    <text x="32" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#FFFFFF">Purpur &amp; Paper Anti-Lag</text>
+  </g>
+</svg>

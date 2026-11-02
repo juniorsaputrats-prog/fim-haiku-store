@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" width="100%" height="100%" fill="none">
+  <defs>
+    <filter id="subtleShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Main Server Terminal Chassis -->
+  <g filter="url(#subtleShadow)">
+    <rect x="10" y="10" width="540" height="360" rx="10" fill="#0c1017" stroke="#212836" stroke-width="1.5" />
+    
+    <!-- Header Bar -->
+    <path d="M10 20 Q10 10 20 10 H540 Q550 10 550 20 V46 H10 Z" fill="#131924" />
+    <line x1="10" y1="46" x2="550" y2="46" stroke="#212836" stroke-width="1" />
+    
+    <!-- Window Controls -->
+    <circle cx="32" cy="28" r="4.5" fill="#f85149" />
+    <circle cx="48" cy="28" r="4.5" fill="#d29922" />
+    <circle cx="64" cy="28" r="4.5" fill="#2ea043" />
+    
+    <!-- Title / Breadcrumb -->
+    <text x="86" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#7d8799">
+      root@fimoo-node-01: /srv/minecraft/survival-smp
+    </text>
+
+    <!-- Right Telemetry Badge -->
+    <rect x="420" y="20" width="116" height="18" rx="4" fill="#1b2433" stroke="#2d3748" stroke-width="1" />
+    <circle cx="432" cy="29" r="3" fill="#00f076" />
+    <text x="442" y="32" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#00f076">20.0 TPS (100%)</text>
+  </g>
+
+  <!-- Server Telemetry Grid -->
+  <g transform="translate(30, 64)">
+    <!-- Metric Box 1: Engine -->
+    <rect x="0" y="0" width="156" height="48" rx="6" fill="#111622" stroke="#1f2737" stroke-width="1" />
+    <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#586579">SERVER ENGINE</text>
+    <text x="12" y="36" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#e6edf3">Purpur 1.21.x</text>
+
+    <!-- Metric Box 2: Memory Optimization -->
+    <rect x="170" y="0" width="156" height="48" rx="6" fill="#111622" stroke="#1f2737" stroke-width="1" />
+    <text x="182" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#586579">GC / ALLOCATION</text>
+    <text x="182" y="36" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">Aikar Flags Opt</text>
+
+    <!-- Metric Box 3: Network Crossplay -->
+    <rect x="340" y="0" width="156" height="48" rx="6" fill="#111622" stroke="#1f2737" stroke-width="1" />
+    <text x="352" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#586579">PROTOCOL</text>
+    <text x="352" y="36" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#a78bfa">Java + Bedrock</text>
+  </g>
+
+  <!-- Real CLI Logs View -->
+  <g transform="translate(30, 132)" font-family="'JetBrains Mono', monospace" font-size="10.5" line-height="1.5">
+    <!-- Log 1 -->
+    <text x="0" y="14" fill="#586579">[13:42:01 INFO]:</text>
+    <text x="105" y="14" fill="#7ee787">[FimooKernel]</text>
+    <text x="195" y="14" fill="#e6edf3">Loading server.properties &amp; purpur.yml...</text>
+
+    <!-- Log 2 -->
+    <text x="0" y="36" fill="#586579">[13:42:02 INFO]:</text>
+    <text x="105" y="36" fill="#38bdf8">[AntiLagCore]</text>
+    <text x="195" y="36" fill="#e6edf3">Entity tick distance set: 3 chunks | Mob cap balanced</text>
+
+    <!-- Log 3 -->
+    <text x="0" y="58" fill="#586579">[13:42:03 INFO]:</text>
+    <text x="105" y="58" fill="#a78bfa">[Geyser-Spigot]</text>
+    <text x="210" y="58" fill="#e6edf3">Bedrock UDP port 19132 open and listening ✓</text>
+
+    <!-- Log 4 -->
+    <text x="0" y="80" fill="#586579">[13:42:04 INFO]:</text>
+    <text x="105" y="80" fill="#d29922">[LuckPerms]</text>
+    <text x="190" y="80" fill="#e6edf3">Loaded 6 groups, 48 permissions in 14ms</text>
+
+    <!-- Log 5 -->
+    <text x="0" y="102" fill="#586579">[13:42:05 INFO]:</text>
+    <text x="105" y="102" fill="#00f076">[FimooSystem]</text>
+    <text x="200" y="102" fill="#00f076" font-weight="700">Done (3.421s)! For help, type "help"</text>
+
+    <!-- Terminal Command Prompt -->
+    <line x1="0" y1="126" x2="496" y2="126" stroke="#1b2332" stroke-width="1" />
+    
+    <text x="0" y="152" fill="#00f076" font-weight="700">&gt;</text>
+    <text x="16" y="152" fill="#e6edf3">fimoo --verify-health --environment=production</text>
+    <rect x="360" y="140" width="8" height="15" fill="#00f076">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Telemetry Output Badge -->
+    <rect x="0" y="172" width="496" height="42" rx="6" fill="#131c2b" stroke="#253347" stroke-width="1" />
+    <text x="14" y="196" fill="#7ee787" font-weight="600">✓ STATUS: OK</text>
+    <text x="110" y="196" fill="#7d8799">|</text>
+    <text x="126" y="196" fill="#e6edf3">Tick Latency: <tspan fill="#00f076">11.8ms</tspan></text>
+    <text x="260" y="196" fill="#7d8799">|</text>
+    <text x="276" y="196" fill="#e6edf3">Chunk Pipeline: <tspan fill="#38bdf8">Optimized</tspan></text>
+  </g>
+</svg>

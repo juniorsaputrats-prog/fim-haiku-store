@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" width="100%" height="100%" fill="none">
+  <!-- Dark Code Editor Base -->
+  <rect width="420" height="220" rx="8" fill="#0d1117" />
+  
+  <!-- Editor Top Tab -->
+  <rect x="0" y="0" width="420" height="30" fill="#131924" />
+  <line x1="0" y1="30" x2="420" y2="30" stroke="#1f2737" stroke-width="1" />
+  
+  <!-- Tab item -->
+  <rect x="16" y="6" width="140" height="24" rx="4" fill="#0d1117" stroke="#1f2737" stroke-width="1" />
+  <circle cx="28" cy="18" r="3" fill="#a78bfa" />
+  <text x="36" y="21" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#e6edf3">CustomModule.java</text>
+  <text x="142" y="21" font-family="'JetBrains Mono', monospace" font-size="10" fill="#586579">×</text>
+
+  <!-- Code Line Numbers & Syntax -->
+  <g transform="translate(16, 46)" font-family="'JetBrains Mono', monospace" font-size="10" line-height="1.6">
+    <!-- Line 1 -->
+    <text x="0" y="14" fill="#484f58">01</text>
+    <text x="28" y="14" fill="#ff7b72">public final class</text>
+    <text x="136" y="14" fill="#79c0ff">FimooCore</text>
+    <text x="195" y="14" fill="#ff7b72">extends</text>
+    <text x="242" y="14" fill="#7ee787">JavaPlugin</text>
+    <text x="306" y="14" fill="#c9d1d9">{</text>
+
+    <!-- Line 2 -->
+    <text x="0" y="32" fill="#484f58">02</text>
+    <text x="44" y="32" fill="#d2a8ff">@EventHandler(priority = EventPriority.HIGHEST)</text>
+
+    <!-- Line 3 -->
+    <text x="0" y="50" fill="#484f58">03</text>
+    <text x="44" y="50" fill="#ff7b72">public void</text>
+    <text x="114" y="50" fill="#d2a8ff">onPlayerPacket</text>
+    <text x="196" y="50" fill="#c9d1d9">(</text>
+    <text x="202" y="50" fill="#79c0ff">PacketReceiveEvent</text>
+    <text x="316" y="50" fill="#e6edf3">e</text>
+    <text x="323" y="50" fill="#c9d1d9">) {</text>
+
+    <!-- Line 4 -->
+    <text x="0" y="68" fill="#484f58">04</text>
+    <text x="60" y="68" fill="#8b949e">// Async non-blocking packet interceptor</text>
+
+    <!-- Line 5 -->
+    <text x="0" y="86" fill="#484f58">05</text>
+    <text x="60" y="86" fill="#79c0ff">databasePool</text>
+    <text x="138" y="86" fill="#c9d1d9">.</text>
+    <text x="144" y="86" fill="#d2a8ff">executeAsync</text>
+    <text x="220" y="86" fill="#c9d1d9">(() -&gt; syncEconomy(e));</text>
+
+    <!-- Line 6 -->
+    <text x="0" y="104" fill="#484f58">06</text>
+    <text x="44" y="104" fill="#c9d1d9">}</text>
+
+    <!-- Line 7 -->
+    <text x="0" y="122" fill="#484f58">07</text>
+    <text x="28" y="122" fill="#c9d1d9">}</text>
+  </g>
+
+  <!-- Bottom Compile Status Chip -->
+  <g transform="translate(16, 180)">
+    <rect width="388" height="26" rx="4" fill="#131924" stroke="#1f2737" stroke-width="1" />
+    <circle cx="28" cy="13" r="3" fill="#00f076" />
+    <text x="38" y="16" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#00f076" font-weight="600">BUILD SUCCESSFUL [Paper 1.21.x API - 0 warnings]</text>
+  </g>
+</svg>

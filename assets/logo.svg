@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" width="280" height="64" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#5865F2" />
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5865F2" />
+      <stop offset="100%" stop-color="#3730A3" />
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D28D9" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Brand Block Symbol -->
+  <g transform="translate(6, 8)">
+    <!-- Outer Shield / Plate -->
+    <rect x="0" y="0" width="48" height="48" rx="12" fill="#181923" stroke="#2B2D3D" stroke-width="1.5" />
+    
+    <!-- Minecraft Isometric Cube -->
+    <!-- Top Face -->
+    <path d="M24 12 L36 19 L24 26 L12 19 Z" fill="url(#cubeTop)" />
+    <!-- Left Face -->
+    <path d="M12 19 L24 26 V38 L12 31 Z" fill="url(#cubeLeft)" />
+    <!-- Right Face -->
+    <path d="M24 26 L36 19 V31 L24 38 Z" fill="url(#cubeRight)" />
+
+    <!-- Center Core Gem Dot -->
+    <circle cx="24" cy="26" r="2.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(66, 14)">
+    <!-- Wordmark -->
+    <text x="0" y="24" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="800" font-size="25" letter-spacing="-0.5" fill="#F5F5F7">
+      FIM<tspan fill="url(#brandGrad)">OO</tspan>
+    </text>
+    
+    <!-- Tagline -->
+    <text x="1" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="9" letter-spacing="2.5" fill="#A1A1AA">
+      JASA SETUP SERVER
+    </text>
+  </g>
+</svg>
